@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(219, 219, 219);
+}
+
+header{
+    background-color: black;
+    color: #f2f000;
+    padding: 40px;
+    margin:0;
+    margin-bottom: 40px;
+}
+
+/* Hero */
+
+.logo{
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Textos */
+
+.titulo{
+    margin: 0;
+    font-size: 54px;
+    font-weight: bold;
+    vertical-align: middle;
+}
