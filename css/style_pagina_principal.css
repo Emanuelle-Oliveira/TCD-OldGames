@@ -1,0 +1,93 @@
+/* Estrutura */
+
+body{
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(219, 219, 219);
+}
+
+header{
+    background-color: black;
+    color: #f2f000;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 2px black;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Hero */
+
+.logo{
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.carrinho{
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 20px;
+    float: right;
+}
+
+.carrinho:hover{
+    width: 35px;
+    transition: 0.3s;
+}
+
+/* Textos */
+
+.titulo{
+    margin: 0;
+    font-size: 54px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* Carrossel */
+
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    width: 690px;
+    height: 322.5px;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.img_carrossel{
+    object-fit: cover;
+    width: 690px;
+    height: 322.5px;
+}
+
+.seta1{
+    width: 20px;
+    float: left;
+    margin-top: 150px;
+}
+
+.seta2{
+    width: 20px;
+    margin-top: 150px;
+}
+
+.espaco_seta{
+    width: 740px;
+    margin: auto;
+    display: block;
+}
