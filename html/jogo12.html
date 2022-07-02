@@ -7,6 +7,7 @@
     <title>Shadow Warrior Classic (1997)</title>
 
     <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 
 <body>
@@ -26,6 +27,19 @@
                 <div class="front-details">
                     <div class="game-img">
                         <img src="../img/jogo12/shadowWarrior-header.jpg" alt="Imagem principal shadow warrior">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input type="number" id="input1" value="0" name="">
+        
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input type="number" id="input2" value="0" name="">
+                        </div>
                     </div>
                     <div class="game-description">
                         <p>
@@ -155,11 +169,59 @@
     </div>
     <div class="analises">
         <h1>Análises de Usuários</h1>
+        <table>
+            <tr>
+                <td class="coluna1_avaliacao">
+                    <span class="estrela">★★★★★</span><br>
+                    <b>5,0 de 5 estrelas</b><br>
+                </td>
+                <td>
+                    <h5>
+                        Confira as opiniões dos clientes sobre este produto
+                    </h5>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        <p><b>Melhor Marca</b></p>
+                        <p>Existem outras marcas, porém nenhuma se compara a esta, as canetas bic são as melhores, por isso só uso elas. E prefiro da cor azul.</p>
+                        <p><b>Rodrigo Barros do Nascimento</b> - 25/02/2022</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        <p><b>Bom</b></p>
+                        <p>Perfeito</p>
+                        <p><b>Débora dos Reis Palhano</b> - 25/02/2022</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        <p><b>canetas BIC</b></p>
+                        <p>O que dizer sobre as canetas BIC? É simplesmente a melhor caneta do mercado. O preço também é excelente.</p>
+                        <p><b>Claudia Maria Oliveira dos Santos</b> - 23/02/2022</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <footer>
         Footer
     </footer>
 </body>
+
+<script type="text/javascript">
+    let likebtn = document.querySelector('#likebtn');
+    let dislikebtn = document.querySelector('#dislikebtn');
+    let input1 = document.querySelector('#input1');
+    let input2 = document.querySelector('#input2');
+
+    likebtn.addEventListener('click', ()=>{
+        input1.value = parseInt(input1.value) + 1;
+        input1.style.color = "#000000";
+    })
+
+    dislikebtn.addEventListener('click', ()=>{
+        input2.value = parseInt(input2.value) + 1;
+        input2.style.color = "#000000";
+    })
+</script>
 
 </html>

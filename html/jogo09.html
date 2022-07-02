@@ -7,6 +7,7 @@
     <title>RollerCoaster Tycoon®: Deluxe</title>
 
     <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 
 <body>
@@ -26,6 +27,19 @@
                 <div class="front-details">
                     <div class="game-img">
                         <img src="../img/jogo09/rollerCoaster-header.jpg" alt="Imagem principal roller coaster">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input type="number" id="input1" value="0" name="">
+        
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input type="number" id="input2" value="0" name="">
+                        </div>
                     </div>
                     <div class="game-description">
                         <p>
@@ -157,11 +171,69 @@
     </div>
     <div class="analises">
         <h1>Análises de Usuários</h1>
+        <table>
+            <tr>
+               <!-- <td class="coluna1_avaliacao">
+                    <span class="estrela">★★★★★</span><br>
+                    <b>5,0 de 5 estrelas</b><br>
+                </td>-->
+                <td>
+                    <div class="user">
+                        <img id="user_foto" src="../img/jogo09/rollerCoaster-img-user-01.jpg">
+                        <p>Luiz Bonner</p>
+                    </div>
+                    <div class="user">
+                        <img src="../img/jogo09/rollerCoaster-img-sub-01.jpg" width="32px" height="32px">
+                        <p>Rodrigo Barros do Nascimento</p>
+                    </div>
+                    <div class="user">
+                        <img src="../img/jogo09/rollerCoaster-img-sub-01.jpg" width="32px" height="32px">
+                        <p>Rodrigo Barros do Nascimento</p>
+                    </div>
+                </td>
+                <td>
+                    
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        <p>Véi, se eu pudesse, eu compraria de novo! Simplesmente o melhor da franquia (feelings talkin') e representa a infância em grande escala!</p>
+                        <p>PUBLICADA: 16 DE SETEMBRO DE 2015</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        
+                        <p>Perfeito</p>
+                        <p><b>Débora dos Reis Palhano</b> - 25/02/2022</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        
+                        <p>O que dizer sobre as canetas BIC? É simplesmente a melhor caneta do mercado. O preço também é excelente.</p>
+                        <p><b>Claudia Maria Oliveira dos Santos</b> - 23/02/2022</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <footer>
         Footer
     </footer>
 </body>
+<script type="text/javascript">
+    let likebtn = document.querySelector('#likebtn');
+    let dislikebtn = document.querySelector('#dislikebtn');
+    let input1 = document.querySelector('#input1');
+    let input2 = document.querySelector('#input2');
+
+    likebtn.addEventListener('click', ()=>{
+        input1.value = parseInt(input1.value) + 1;
+        input1.style.color = "#000000";
+    })
+
+    dislikebtn.addEventListener('click', ()=>{
+        input2.value = parseInt(input2.value) + 1;
+        input2.style.color = "#000000";
+    })
+</script>
 
 </html>

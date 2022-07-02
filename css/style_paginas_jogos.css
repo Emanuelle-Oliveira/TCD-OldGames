@@ -117,11 +117,12 @@ button:active{
 
 .comentario{
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 12px;
     padding-left: 20px;
     border: 1px solid #fbff00;
     border-radius: 5px;
     margin-top: 10px;
+    height: 150px;
 }
 
 h5{
@@ -129,4 +130,19 @@ h5{
     margin: 0;
     padding: 0;
     padding-bottom: 5px;
+}
+
+.user{
+    padding-top: 12px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    height: 150px;
+    border: 1px solid #fbff00;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#user_foto{
+    width:  40px;
+    height: 40px;
 }
