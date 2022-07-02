@@ -9,8 +9,8 @@ body{
 header{
     background-color: black;
     color: #f2f000;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
     margin:0;
@@ -53,6 +53,12 @@ main{
     vertical-align: middle;
 }
 
+h2{
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    padding-bottom: 5px;
+}
+
 /* Carrossel */
 
 .carrossel{
@@ -75,7 +81,7 @@ main{
     height: 322.5px;
 }
 
-.seta1{
+/*.seta1{
     width: 20px;
     float: left;
     margin-top: 150px;
@@ -90,4 +96,4 @@ main{
     width: 740px;
     margin: auto;
     display: block;
-}
+}*/
