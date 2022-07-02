@@ -1,0 +1,33 @@
+body {}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-side {
+    flex: 70%;
+    padding: 20px;
+}
+
+.right-side {
+    flex: 30%;
+    padding: 20px;
+}
+
+.img-sub {
+    display: flex;
+}
+
+.img-sub img {
+    width: 115px;
+    height: 65px;
+    margin: 10px;
+}
+
+.alert-idioma {
+    border: 1px solid tomato;
+    /* amarelo que não lembro */
+    text-align: center;
+
+}
