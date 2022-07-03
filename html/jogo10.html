@@ -49,30 +49,40 @@
         <h1>
             Duke Nukem 3D: 20th Anniversary World Tour 
         </h1>
-        <div class="row">
+         <!-- Função slide de imagens -->
+         <div class="row">
             <div class="left-side">
                 <div class="img-sub">
-                    <div class="sub-img"><img src="../img/jogo10/dukeNukem-img-sub-01.jpg" alt="Imagem secundária duke nukem"></div>
-                    <div class="sub-img"><img src="../img/jogo10/dukeNukem-img-sub-02.jpg" alt="Imagem secundária duke nukem"></div>
-                    <div class="sub-img"><img src="../img/jogo10/dukeNukem-img-sub-03.jpg" alt="Imagem secundária duke nukem"></div>
+                    <div class="sub-img"><img src="../img/jogo10/dukeNukem-img-sub-01.jpg" alt="Imagem secundária duke nukem"
+                            onclick="currentDiv(1)"></div>
+                    <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-02.jpg" alt="Imagem secundária duke nukem"
+                            onclick="currentDiv(2)"></div>
+                    <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-03.jpg" alt="Imagem secundária duke nukem"
+                            onclick="currentDiv(3)"></div>
+                </div>
+
+                <div class="row-padding">
+                    <img class="slide-img" src="../img/jogo10/dukeNukem-img-sub-01.jpg">
+                    <img class="slide-img" src="../img/jogo10/dukeNukem-img-sub-02.jpg" style="display:block !important;">
+                    <img class=" slide-img" src="../img/jogo10/dukeNukem-img-sub-03.jpg">
                 </div>
             </div>
-            <div class="right-side">
+            <div class=" right-side">
                 <div class="front-details">
                     <div class="game-img">
-                        <img src="../img/jogo10/dukeNukem-header.jpg" alt="Imagem principal Duke Nukem">
+                        <img src="../img/jogo10/dukeNukem-header.jpg" alt="Imagem principal duke nukem">
                     </div>
                     <div class="container">
                         <div class="voting">
                             <button id="likebtn">
                                 <i class="fa fa-thumbs-up"></i>
                             </button>
-                            <input type="number" id="input1" value="0" name="">
-        
+                            <input class="input-voting" type="number" id="input1" value="0" name="">
+
                             <button id="dislikebtn">
                                 <i class="fa fa-thumbs-down"></i>
                             </button>
-                            <input type="number" id="input2" value="0" name="">
+                            <input class="input-voting" type="number" id="input2" value="0" name="">
                         </div>
                     </div>
                     <div class="game-description">
@@ -218,70 +228,26 @@
                     <div class="comentario">
                         <span class="estrela">★★★★★</span>
                         <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
-                        <p>Em sua "época", joguei esse jogo por mais horas do que haviam disponíveis num único dia.
-                            Clássico, controverso, polêmico, mas, acima de tudo, muito divertido e original.
+                        <p>Meu jogo favorito de toda a vida. Comecei minha vida de gamer com esse jogo
                         </p>
-                        <p><b>Tony</b> - 0.2h jogadas</p>
+                        <p><b>Kagury</b> - 29.3h jogadas</p>
                     </div>
                     <div class="comentario">
                         <span class="estrela">★★★★</span>
                         <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
-                        <p>Top demais.</p>
-                        <p><b>или</b> - 1.2h jogadas</p>
+                        <p>Já havia jogado essa maravilha na edição do Xbox One e decidi adquirir novamente para o PC. Duke Nukem 3D é um dos melhores shooters de todos os tempos juntamente com DOOM, esse game revolucionou a indústria dos games de tiro e sem falar que tem o personagem mais badass de todos os tempos! HAIL TO THE KING, BABY!</p>
+                        <p><b>tiagoreis</b> - 0.2h jogadas</p>
                     </div>
                     <div class="comentario">
-                        <span class="estrela">★</span>
-                        <p><b><b><b><i class="fa fa-thumbs-down"></i>Não recomendado</b></b></b></p>
-                        <p>Não consigo iniciar o jogo... Ás configurações do meu PC são absurdas, então não é
-                            isso...
+                        <span class="estrela">★★★★★</span>
+                        <p><b><b><b><i class="fa fa-thumbs-down"></i> Recomendado</b></b></b></p>
+                        <p>Não tenho nem o que dizer desse clássico gigante, apenas que esse jogo fez parte da minha vida gamer , um dos jogos que mais joguei na era do MS-DOS.
                         </p>
-                        <p><b>Pepsiftw</b> - 40.0h jogadas</p>
+                        <p><b>DDevil416</b> - 1.6h jogadas</p>
                     </div>
                 </td>
             </tr>
         </table>
-      <!--  <table>
-            <tr>
-                <td class="coluna1_avaliacao">
-                    <span class="estrela">★★★★★</span><br>
-                    <b>5,0 de 5 estrelas</b><br>
-                </td>
-                <td>
-                    <div class="user">
-                        <img id="user_foto" src="../img/jogo10/dukeNukem-img-user-01.jpg">
-                        <p>DDevil416</p>
-                    </div>
-                    <div class="user">
-                        <img id="user_foto" src="../img/jogo10/dukeNukem-img-user-02.jpg">
-                        <p>tiagoreis24</p>
-                    </div>
-                    <div class="user">
-                        <img id="user_foto" src="../img/jogo10/dukeNukem-img-user-03.jpg">
-                        <p>Kaguya</p>
-                    </div>
-                </td>
-                <td>
-                    
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>
-                        <p>Não tenho nem o que dizer desse clássico gigante, apenas que esse jogo fez parte da minha vida gamer , um dos jogos que mais joguei na era do MS-DOS.
-
-                            Hail to the king ,Baby</p>
-                        <p><b>PUBLICADA: 6 DE JUNHO DE 2022</b></p>
-                    </div>
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>
-                        <p>Já havia jogado essa maravilha na edição do Xbox One e decidi adquirir novamente para o PC. Duke Nukem 3D é um dos melhores shooters de todos os tempos juntamente com DOOM, esse game revolucionou a indústria dos games de tiro e sem falar que tem o personagem mais badass de todos os tempos! HAIL TO THE KING, BABY!</p>
-                        <p><b>PUBLICADA: 4 DE FEVEREIRO DE 2022</b></p>
-                    </div>
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>  
-                        <p>Meu jogo favorito de toda a vida. Comecei minha vida de gamer com esse jogo <3</p>
-                        <p><b>PUBLICADA: 31 DE DEZEMBRO DE 2016</b></p>
-                    </div>
-                </td>
-            </tr>
-        </table>-->
     </div>
     </main>
     <!-- rodapé -->
