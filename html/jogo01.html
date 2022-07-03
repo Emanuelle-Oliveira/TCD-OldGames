@@ -7,6 +7,8 @@
     <title>Grand Theft Auto (1997)</title>
 
     <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 
 <body>
@@ -17,15 +19,37 @@
         <div class="row">
             <div class="left-side">
                 <div class="img-sub">
-                    <div class="sub-img"><img src="../img/jogo01/GTA-IMG-SUB-01.jpg" alt="Imagem secundária GTA"></div>
-                    <div class="sub-img"><img src="../img/jogo01/GTA-IMG-SUB-02.jpg" alt="Imagem secundária GTA"></div>
-                    <div class="sub-img"><img src="../img/jogo01/GTA-IMG-SUB-03.jpg" alt="Imagem secundária GTA"></div>
+                    <div class="sub-img"><img src="../img/jogo01/GTA-IMG-SUB-01.jpg" alt="Imagem secundária GTA"
+                            onclick="currentDiv(1)"></div>
+                    <div class="sub-img"><img src="../img/jogo01/GTA-IMG-SUB-02.jpg" alt="Imagem secundária GTA"
+                            onclick="currentDiv(2)"></div>
+                    <div class="sub-img"><img src="../img/jogo01/GTA-IMG-SUB-03.jpg" alt="Imagem secundária GTA"
+                            onclick="currentDiv(3)"></div>
+                </div>
+
+                <div class="row-padding">
+                    <img class="slide-img" src="../img/jogo01/GTA-IMG-SUB-01.jpg">
+                    <img class="slide-img" src="../img/jogo01/GTA-IMG-SUB-02.jpg" style="display:block !important;">
+                    <img class=" slide-img" src="../img/jogo01/GTA-IMG-SUB-03.jpg">
                 </div>
             </div>
-            <div class="right-side">
+            <div class=" right-side">
                 <div class="front-details">
                     <div class="game-img">
                         <img src="../img/jogo01/GTA-header.jpg" alt="Imagem principal GTA">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input type="number" id="input1" value="0" name="">
+
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input type="number" id="input2" value="0" name="">
+                        </div>
                     </div>
                     <div class="game-description">
                         <p>
@@ -33,10 +57,12 @@
                             Somente
                             os
                             melhores
-                            conseguirão controlar os carros mais velozes. Somente os mais espertos conhecerão todos os
+                            conseguirão controlar os carros mais velozes. Somente os mais espertos conhecerão todos
+                            os
                             atalhos e
                             segredos de
-                            cada pista. Somente os mais durões conseguirão ganhar o mundo, e terminar sua missão como
+                            cada pista. Somente os mais durões conseguirão ganhar o mundo, e terminar sua missão
+                            como
                             verdadeiros
                             profissionais...
                         </p>
@@ -53,12 +79,14 @@
                             </tr>
                             <tr>
                                 <td>Desenvolvedor</td>
-                                <td><a href="https://store.steampowered.com/developer/rockstargames">Rockstar North</a>
+                                <td><a href="https://store.steampowered.com/developer/rockstargames">Rockstar
+                                        North</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Distribuidora</td>
-                                <td><a href="https://store.steampowered.com/developer/rockstargames">Rockstar Games</a>
+                                <td><a href="https://store.steampowered.com/developer/rockstargames">Rockstar
+                                        Games</a>
                                 </td>
                             </tr>
                         </table>
@@ -161,18 +189,55 @@
                     </tr>
                 </table>
             </div>
-            <div class="qualquer-coisa">
-                Alguma coisa
-            </div>
         </div>
     </div>
     <div class="analises">
         <h1>Análises de Usuários</h1>
+        <table>
+            <tr>
+                <td class="coluna1_avaliacao">
+                    <span class="estrela">★★★★★</span><br>
+                    <b>5,0 de 5 estrelas</b><br>
+                </td>
+                <td>
+                    <h5>
+                        Confira as opiniões dos clientes sobre este produto
+                    </h5>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                        <p>Em sua "época", joguei esse jogo por mais horas do que haviam disponíveis num único dia.
+                            Clássico, controverso, polêmico, mas, acima de tudo, muito divertido e original.
+                        </p>
+                        <p><b>Tony</b> - 0.2h jogadas</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★★★★</span>
+                        <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                        <p>Top demais.</p>
+                        <p><b>или</b> - 1.2h jogadas</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★</span>
+                        <p><b><b><b><i class="fa fa-thumbs-down"></i>Não recomendado</b></b></b></p>
+                        <p>Não consigo iniciar o jogo... Ás configurações do meu PC são absurdas, então não é isso...
+                        </p>
+                        <p><b>Pepsiftw</b> - 40.0h jogadas</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <footer>
-        Footer
+        © 2022 Old Games Inc. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos
+        donos nos EUA e em outros países.
+        IVA incluso em todos os preços onde aplicável. <b> Política de Privacidade | Termos Legais | Acordo de
+            Assinatura do
+            OldGames | Reembolsos</b>
     </footer>
+    <script src="../js/script_paginas_jogos.js"></script>
 </body>
+
 
 </html>

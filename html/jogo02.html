@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>The Ultimate Doom (1995)</title>
     <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 
 <body>
@@ -16,19 +18,36 @@
             <div class="left-side">
                 <div class="img-sub">
                     <div class="sub-img"><img src="../img/jogo02/UltimateDoom-IMG-SUB-01.jpg"
-                            alt="Imagem secundária GTA"></div>
+                            alt="Imagem secundária Doom" onclick="currentDiv(1)"></div>
                     <div class="sub-img"><img src="../img/jogo02/UltimateDoom-IMG-SUB-02.jpg"
-                            alt="Imagem secundária GTA"></div>
-                    <!-- <div class="sub-img"><img src="../img/jogo02/UltimateDoom-IMG-SUB-03.jpg"
-                            alt="Imagem secundária GTA"></div> -->
+                            alt="Imagem secundária Doom" onclick="currentDiv(2)"></div>
                     <div class="sub-img"><img src="../img/jogo02/UltimateDoom-IMG-SUB-04.jpg"
-                            alt="Imagem secundária GTA"></div>
+                            alt="Imagem secundária Doom" onclick="currentDiv(3)"></div>
+                </div>
+                <div class="row-padding">
+                    <img class="slide-img" src="../img/jogo02/UltimateDoom-IMG-SUB-01.jpg">
+                    <img class="slide-img" src="../img/jogo02/UltimateDoom-IMG-SUB-02.jpg"
+                        style="display:block !important;">
+                    <img class=" slide-img" src="../img/jogo02/UltimateDoom-IMG-SUB-04.jpg">
                 </div>
             </div>
             <div class="right-side">
                 <div class="front-details">
                     <div class="game-img">
-                        <img src="../img/jogo02/UltimateDoom-header.jpg" alt="Imagem principal GTA">
+                        <img src="../img/jogo02/UltimateDoom-header.jpg" alt="Imagem principal Doom">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input type="number" id="input1" value="0" name="">
+
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input type="number" id="input2" value="0" name="">
+                        </div>
                     </div>
                     <div class="game-description">
                         <p>
@@ -161,24 +180,24 @@
             <div class="qualquer-coisa">
                 <table>
                     <tr>
-                        <td>icon|</td>
-                        <td>Um Jogador</td>
+                        <td><i class="fas fa-user-alt"></i></td>
+                        <td> - Um Jogador</td>
                     </tr>
                     <tr>
-                        <td>icon|</td>
-                        <td>JxJ tela dividida/compart.</td>
+                        <td><i class="fas fa-user-friends"></i></td>
+                        <td> - JxJ tela dividida/compart.</td>
                     </tr>
                     <tr>
-                        <td>icon|</td>
-                        <td>Coop. tela dividida</td>
+                        <td><i class="fas fa-user-friends"></i></td>
+                        <td> - Coop. tela dividida</td>
                     </tr>
                     <tr>
-                        <td>icon|</td>
-                        <td>Compat. total com controle</td>
+                        <td><i class="fas fa-gamepad"></i></td>
+                        <td> - Compat. total com controle</td>
                     </tr>
                     <tr>
-                        <td>icon|</td>
-                        <td>Salvamento em Nuvem</td>
+                        <td><i class="fas fa-cloud"></i></td>
+                        <td> - Salvamento em Nuvem</td>
                     </tr>
                 </table>
             </div>
@@ -186,10 +205,50 @@
     </div>
     <div class="analises">
         <h1>Análises de Usuários</h1>
+        <table>
+            <tr>
+                <td class="coluna1_avaliacao">
+                    <span class="estrela">★★★★★</span><br>
+                    <b>5,0 de 5 estrelas</b><br>
+                </td>
+                <td>
+                    <h5>
+                        Confira as opiniões dos clientes sobre este produto
+                    </h5>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                        <p>Eu não estou preso com vocês, Vocês estão presos comigo
+                        </p>
+                        <p><b>DoHell</b> - 0.3h jogadas</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★★★★</span>
+                        <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                        <p>legal mata demonio</p>
+                        <p><b>Marcelo Games 2020</b> - 13.5h jogadas</p>
+                    </div>
+                    <div class="comentario">
+                        <span class="estrela">★★★★★</span>
+                        <p><b><b><b><i class="fa fa-thumbs-up"></i>Recomendado</b></b></b></p>
+                        <p>To perdida no mapa socorro. Jogo muito bom dá pra matar demonios, menos os meus :C
+                        </p>
+                        <p><b>agatha</b> - 9.6h jogadas</p>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
     </div>
     <footer>
-        Footer
+        © 2022 Old Games Inc. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos
+        donos nos EUA e em outros países.
+        IVA incluso em todos os preços onde aplicável. <b> Política de Privacidade | Termos Legais | Acordo de
+            Assinatura do
+            OldGames | Reembolsos</b>
+
     </footer>
+    <script src="../js/script_paginas_jogos.js"></script>
 </body>
 
 </html>
