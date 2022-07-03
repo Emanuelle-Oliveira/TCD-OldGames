@@ -1,0 +1,277 @@
+/* Estrutura */
+
+body{
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(219, 219, 219);
+}
+
+header{
+    background-color: black;
+    color: #f2f000;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 2px black;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+footer{
+    height: 20px;
+    margin-top: 40px;
+    background-color: black;
+    color: #f2f000;
+    padding: 30px;
+    text-align: center
+}
+
+/* Hero */
+
+.logo{
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.carrinho{
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.carrinho:hover{
+    width: 35px;
+    transition: 0.3s;
+}
+
+.direita_hero{
+    float: right;
+    display: inline;
+    vertical-align: middle;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#busca_jogo{
+    width: 200px;
+    height: 36px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+}
+
+#botao_busca{
+    width: 25px;
+    height: 25px;
+    background-color: #f2f000;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 0;
+    cursor: pointer;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+datalist{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Textos */
+
+.titulo{
+    margin: 0;
+    font-size: 54px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+h2{
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+h3{
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color:black;
+}
+
+button{
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    padding: 2px;
+    border: 2px;
+    cursor: pointer;
+}
+
+button:visited{
+    text-decoration: none;
+    color:black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#valida{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#carrinho{
+    position: fixed;
+    padding: 0;
+    left: 1680px;
+    right: 50px;
+    top: 100px;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(238, 238, 80);
+    transform: scale(1.1);
+    border: #f2f000 1px;
+    border-radius: 30px;
+}
+
+#carrinho h1{
+    margin-top: 0px;
+}
+.cart--details{
+    margin-bottom: 10px;
+}
+
+.menu-closer button{
+    margin-left: 150px;
+    cursor: pointer ;
+    background-color: rgb(238, 238, 80);
+
+}
+
+#botton-fechar{
+    background-color: black;
+    border: none;
+    color: yellow;
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#botton-fechar:hover{
+    opacity: 0.5;
+}
+
+
+
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+h4{
+    color: black;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
+}
+
+h5{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Carrossel */
+
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    width: 690px;
+    height: 322.5px;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.img_carrossel{
+    object-fit: cover;
+    width: 690px;
+    height: 322.5px;
+}
+
+/* Tabela */
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 25%;
+    padding-right: 15px;
+}
+
+.descricao{
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 4px rgb(71, 71, 71);
+    padding-bottom: 10px;
+}
+
+.descricao:hover{
+    background-color: white;
+}
+
+.imgtable{
+    margin: 0;
+    display: block;
+}
+
+.botao{
+    padding: 5px;
+    margin: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.botao:hover{
+    background-color: rgb(78, 78, 78);
+}
+
+.carrinhobotao{
+    margin: 0;
+    vertical-align: middle;
+}
