@@ -44,13 +44,52 @@ footer{
 .carrinho{
     padding: 0;
     margin-right: 10px;
-    margin-top: 20px;
-    float: right;
+    vertical-align: middle;
+    margin-left: 30px;
 }
 
 .carrinho:hover{
     width: 35px;
     transition: 0.3s;
+}
+
+.direita_hero{
+    float: right;
+    display: inline;
+    vertical-align: middle;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#busca_jogo{
+    width: 200px;
+    height: 36px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+}
+
+#botao_busca{
+    width: 25px;
+    height: 25px;
+    background-color: #f2f000;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 0;
+    cursor: pointer;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+datalist{
+    font-family: 'Rajdhani', sans-serif;
 }
 
 /* Textos */
@@ -86,12 +125,17 @@ a:visited{
     color:black;
 }
 
-
 h4{
     color: black;
     padding: 10px;
     text-align: right;
     margin: 0;
+}
+
+h5{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Carrossel */
