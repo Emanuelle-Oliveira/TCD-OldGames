@@ -1,6 +1,6 @@
 /* Corpo da Página */
 body {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: auto;
     font-family: 'Rajdhani', sans-serif;
@@ -22,7 +22,7 @@ header {
 }
 
 main {
-    width: 95%;
+    width: 60%;
     margin: auto;
     padding-top: 20px;
 }
@@ -243,7 +243,8 @@ onclick {
     justify-content: center;
 }
 
-input {
+
+.input-voting {
     width: 50px;
     border: none;
     background: none;
