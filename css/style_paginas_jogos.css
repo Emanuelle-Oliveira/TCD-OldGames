@@ -1,9 +1,145 @@
+/* Corpo da Página */
 body {
-    width: 60%;
+    width: 80%;
     height: 100%;
     margin: auto;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(219, 219, 219);
 }
 
+header {
+    background-color: black;
+    color: #f2f000;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    /* max-width: 100%;
+    width: auto; */
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 2px black;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+footer {
+    height: 20px;
+    margin-top: 40px;
+    background-color: black;
+    color: #f2f000;
+    padding: 30px;
+    text-align: center
+}
+
+.logo {
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.carrinho {
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.carrinho:hover {
+    width: 35px;
+    transition: 0.3s;
+}
+
+.direita_hero {
+    float: right;
+    display: inline;
+    vertical-align: middle;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#busca_jogo {
+    width: 200px;
+    height: 36px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+}
+
+#botao_busca {
+    width: 25px;
+    height: 25px;
+    background-color: #f2f000;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 0;
+    cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/* Textos */
+datalist {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 54px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    color: black;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
+}
+
+h5 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estrutura da Página */
 .row {
     display: flex;
     flex-wrap: nowrap;
@@ -51,12 +187,14 @@ body {
     margin: 10px;
 }
 
+/* Detalhes */
+
 onclick {
-    border: 1px solid tomato;
+    border: 1px solid #f2f000;
 }
 
 .alert-idioma {
-    border: 1px solid tomato;
+    border: 1px solid #f2f000;
     /* amarelo que não lembro */
     text-align: center;
 
@@ -84,15 +222,6 @@ onclick {
     padding: 20px;
 
 }
-
-footer {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-}
-
 
 /*botao de like e dislike*/
 .container {
@@ -136,7 +265,7 @@ button {
 }
 
 button:active {
-    color: #fbff00;
+    color: #f2f000;
     transform: scale(1.2);
 }
 
@@ -151,7 +280,7 @@ button:active {
     padding-top: 5px;
     padding-bottom: 12px;
     padding-left: 20px;
-    border: 1px solid #fbff00;
+    border: 1px solid #f2f000;
     border-radius: 5px;
     margin-top: 10px;
     height: 150px;
@@ -169,12 +298,7 @@ h5 {
     padding-bottom: 5px;
     padding-left: 20px;
     height: 150px;
-    border: 1px solid #fbff00;
+    border: 1px solid #f2f000;
     border-radius: 5px;
     margin-top: 10px;
-}
-
-#user_foto {
-    width: 40px;
-    height: 40px;
 }

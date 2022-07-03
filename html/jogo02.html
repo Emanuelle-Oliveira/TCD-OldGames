@@ -11,6 +11,31 @@
 
 <body>
     <header>
+        <img class="logo" src="../img/pagina_principal/logo.png" width="58px">
+        <span class="titulo">Old Games</span>
+        <span class="direita_hero">
+            <input type="search" id="busca_jogo" list="lista_jogos">
+            <datalist id="lista_jogos">
+                <option value="Grand Theft Auto"></option>
+                <option value="The Ultimate Doom"></option>
+                <option value="Worms Armageddon"></option>
+                <option value="Doom II"></option>
+                <option value="Wolfenstein 3D"></option>
+                <option value="Quake"></option>
+                <option value="Diablo"></option>
+                <option value="Half-Life"></option>
+                <option value="RollerCoaster Tycoon"></option>
+                <option value="Duke Nukem 3D"></option>
+                <option value="Outlaws"></option>
+                <option value="Shadow Warrior"></option>
+            </datalist>
+            <img src="../img/pagina_principal/lupa.png" id="botao_busca" onclick="realizarBusca()">
+            <a href="pagina_carrinho.html">
+                <img class="carrinho" src="../img/pagina_principal/carrinho.png" width="30px">
+            </a>
+        </span>
+    </header>
+    <main>
         <h1>
             Ultimate Doom
         </h1>
@@ -82,172 +107,178 @@
                 </div>
             </div>
         </div>
-    </header>
-    <hr>
-    <div class="row">
-        <div class="left-side">
-            <div class="alert-idioma">
-                <h3>
-                    Indisponível em Português(Brasil)
-                </h3>
-                Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
-                antes de comprar.
-            </div>
+        <!-- <hr> -->
+        <div class="row">
+            <div class="left-side">
+                <div class="alert-idioma">
+                    <h3>
+                        Indisponível em Português(Brasil)
+                    </h3>
+                    Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
+                    antes de comprar.
+                </div>
 
-            <div class="game-details">
-                <h2>
-                    Sobre este jogo
-                </h2>
-                <hr>
-                O aclamado jogo que colocou o mundo em chamas. Mais o novo Episode IV: Thy Flesh Consumed.
-                <br>
-                Os demônios vieram e os navais morreram. Exceto um. Você é a última defesa contra estas hordas vindas do
-                inferno. Prepare-se para a mais intensa, mutante e sanguinolenta ação já vista! O mundo virtual feito de
-                texturas é tão real, que você não apenas joga DOOM - você o vive.
-                <br>
-                The Ultimate DOOM te leva além de qualquer coisa que você já tenha experimentado. Primeiro, você obtém
-                os três episódios originais - São 27 incríveis níveis, com muitas explosões. Então ele realmente te leva
-                longe com o mais novo episódio: Thy Flesh Consumed.
-                <br>
-                Agora você está morto. Justamente quando você pensa que está ficando bom em DOOM, você é acertado por
-                Perfect Hatred, Sever the Wicked e sete outros níveis expert nunca antes vistos! Eles são tão difíceis,
-                que os primeiros 27 níveis vão parecer uma voltinha no parque!
+                <div class="game-details">
+                    <h2>
+                        Sobre este jogo
+                    </h2>
+                    <!-- <hr> -->
+                    O aclamado jogo que colocou o mundo em chamas. Mais o novo Episode IV: Thy Flesh Consumed.
+                    <br>
+                    Os demônios vieram e os navais morreram. Exceto um. Você é a última defesa contra estas hordas
+                    vindas do
+                    inferno. Prepare-se para a mais intensa, mutante e sanguinolenta ação já vista! O mundo virtual
+                    feito de
+                    texturas é tão real, que você não apenas joga DOOM - você o vive.
+                    <br>
+                    The Ultimate DOOM te leva além de qualquer coisa que você já tenha experimentado. Primeiro, você
+                    obtém
+                    os três episódios originais - São 27 incríveis níveis, com muitas explosões. Então ele realmente te
+                    leva
+                    longe com o mais novo episódio: Thy Flesh Consumed.
+                    <br>
+                    Agora você está morto. Justamente quando você pensa que está ficando bom em DOOM, você é acertado
+                    por
+                    Perfect Hatred, Sever the Wicked e sete outros níveis expert nunca antes vistos! Eles são tão
+                    difíceis,
+                    que os primeiros 27 níveis vão parecer uma voltinha no parque!
+                </div>
+                <div>
+                    <h2>
+                        Requisistos de Sistema
+                    </h2>
+                    <!-- <hr> -->
+                    <table>
+                        <tr>
+                            <td>OS:</td>
+                            <td>Windows XP, Vista, 7, 8 ou 10</td>
+                        </tr>
+                        <tr>
+                            <td>Processador:</td>
+                            <td>1.8 GHz ou equivalente</td>
+                        </tr>
+                        <tr>
+                            <td>Memória:</td>
+                            <td>512MB RAM (1 GB recomendado)</td>
+                        </tr>
+                        <tr>
+                            <td>Espaço em Disco:</td>
+                            <td>2 Gb de armazenamento</td>
+                        </tr>
+                        <tr>
+                            <td>Placa de Video:</td>
+                            <td>Placa de vídeo 3D compatível com DirectX 7 (DirectX 9 recomendado)</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div>
-                <h2>
-                    Requisistos de Sistema
-                </h2>
-                <hr>
-                <table>
-                    <tr>
-                        <td>OS:</td>
-                        <td>Windows XP, Vista, 7, 8 ou 10</td>
-                    </tr>
-                    <tr>
-                        <td>Processador:</td>
-                        <td>1.8 GHz ou equivalente</td>
-                    </tr>
-                    <tr>
-                        <td>Memória:</td>
-                        <td>512MB RAM (1 GB recomendado)</td>
-                    </tr>
-                    <tr>
-                        <td>Espaço em Disco:</td>
-                        <td>2 Gb de armazenamento</td>
-                    </tr>
-                    <tr>
-                        <td>Placa de Video:</td>
-                        <td>Placa de vídeo 3D compatível com DirectX 7 (DirectX 9 recomendado)</td>
-                    </tr>
-                </table>
+            <div class="right-side">
+                <div class="status-side">
+                    <table>
+                        <tr>
+                            <td>Título:</td>
+                            <td> The Ultimate Doom</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero:</td>
+                            <td>Ação</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento:</td>
+                            <td>30/abr./1995</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvedor:</td>
+                            <td><a href="https://store.steampowered.com/developer/bethesda">id Software</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distribuidora:</td>
+                            <td><a href="https://store.steampowered.com/developer/bethesda">id Software</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Idiomas:</td>
+                            <td>Inglês +4</td>
+                        </tr>
+                        <tr>
+                            <td>Dublagem:</td>
+                            <td>Indisponível</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="qualquer-coisa">
+                    <table>
+                        <tr>
+                            <td><i class="fas fa-user-alt"></i></td>
+                            <td> - Um Jogador</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-user-friends"></i></td>
+                            <td> - JxJ tela dividida/compart.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-user-friends"></i></td>
+                            <td> - Coop. tela dividida</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-gamepad"></i></td>
+                            <td> - Compat. total com controle</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-cloud"></i></td>
+                            <td> - Salvamento em Nuvem</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-        <div class="right-side">
-            <div class="status-side">
-                <table>
-                    <tr>
-                        <td>Título:</td>
-                        <td> The Ultimate Doom</td>
-                    </tr>
-                    <tr>
-                        <td>Gênero:</td>
-                        <td>Ação</td>
-                    </tr>
-                    <tr>
-                        <td>Lançamento:</td>
-                        <td>30/abr./1995</td>
-                    </tr>
-                    <tr>
-                        <td>Desenvolvedor:</td>
-                        <td><a href="https://store.steampowered.com/developer/bethesda">id Software</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Distribuidora:</td>
-                        <td><a href="https://store.steampowered.com/developer/bethesda">id Software</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Idiomas:</td>
-                        <td>Inglês +4</td>
-                    </tr>
-                    <tr>
-                        <td>Dublagem:</td>
-                        <td>Indisponível</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="qualquer-coisa">
-                <table>
-                    <tr>
-                        <td><i class="fas fa-user-alt"></i></td>
-                        <td> - Um Jogador</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-user-friends"></i></td>
-                        <td> - JxJ tela dividida/compart.</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-user-friends"></i></td>
-                        <td> - Coop. tela dividida</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-gamepad"></i></td>
-                        <td> - Compat. total com controle</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-cloud"></i></td>
-                        <td> - Salvamento em Nuvem</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="analises">
-        <h1>Análises de Usuários</h1>
-        <table>
-            <tr>
-                <td class="coluna1_avaliacao">
-                    <span class="estrela">★★★★★</span><br>
-                    <b>5,0 de 5 estrelas</b><br>
-                </td>
-                <td>
-                    <h5>
-                        Confira as opiniões dos clientes sobre este produto
-                    </h5>
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>
-                        <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
-                        <p>Eu não estou preso com vocês, Vocês estão presos comigo
-                        </p>
-                        <p><b>DoHell</b> - 0.3h jogadas</p>
-                    </div>
-                    <div class="comentario">
-                        <span class="estrela">★★★★</span>
-                        <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
-                        <p>legal mata demonio</p>
-                        <p><b>Marcelo Games 2020</b> - 13.5h jogadas</p>
-                    </div>
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>
-                        <p><b><b><b><i class="fa fa-thumbs-up"></i>Recomendado</b></b></b></p>
-                        <p>To perdida no mapa socorro. Jogo muito bom dá pra matar demonios, menos os meus :C
-                        </p>
-                        <p><b>agatha</b> - 9.6h jogadas</p>
-                    </div>
+        <div class="analises">
+            <h1>Análises de Usuários</h1>
+            <table>
+                <tr>
+                    <td class="coluna1_avaliacao">
+                        <span class="estrela">★★★★★</span><br>
+                        <b>5,0 de 5 estrelas</b><br>
+                    </td>
+                    <td>
+                        <h5>
+                            Confira as opiniões dos clientes sobre este produto
+                        </h5>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                            <p>Eu não estou preso com vocês, Vocês estão presos comigo
+                            </p>
+                            <p><b>DoHell</b> - 0.3h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★</span>
+                            <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                            <p>legal mata demonio</p>
+                            <p><b>Marcelo Games 2020</b> - 13.5h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-up"></i>Recomendado</b></b></b></p>
+                            <p>To perdida no mapa socorro. Jogo muito bom dá pra matar demonios, menos os meus :C
+                            </p>
+                            <p><b>agatha</b> - 9.6h jogadas</p>
+                        </div>
 
-                </td>
-            </tr>
-        </table>
-    </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
     <footer>
         © 2022 Old Games Inc. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos
         donos nos EUA e em outros países.
         IVA incluso em todos os preços onde aplicável. <b> Política de Privacidade | Termos Legais | Acordo de
             Assinatura do
             OldGames | Reembolsos</b>
-
     </footer>
+
     <script src="../js/script_paginas_jogos.js"></script>
 </body>
 
