@@ -154,6 +154,10 @@ a{
     border-radius: 30px;
 }
 
+#car-principal{
+    cursor: pointer;
+}
+
 #carrinho h1{
     margin-top: 0px;
 }
