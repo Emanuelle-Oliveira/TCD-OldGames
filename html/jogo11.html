@@ -8,237 +8,288 @@
 
     <link rel="stylesheet" href="../css/style_paginas_jogos.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--Importação de stylesheets  -->
+    <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Cabeçalho da página -->
     <header>
-        <h1>
-            Outlaws + A Handful of Missions 
-        </h1>
+        <a href="pagina_principal.html">
+            <img class="logo" src="../img/pagina_principal/logo.png" width="58px"></a>
+        <span class="titulo">Old Games</span>
+        <span class="direita_hero">
+            <input type="search" id="busca_jogo" list="lista_jogos">
+            <datalist id="lista_jogos">
+                <option value="Grand Theft Auto"></option>
+                <option value="The Ultimate Doom"></option>
+                <option value="Worms Armageddon"></option>
+                <option value="Doom II"></option>
+                <option value="Wolfenstein 3D"></option>
+                <option value="Quake"></option>
+                <option value="Diablo"></option>
+                <option value="Half-Life"></option>
+                <option value="RollerCoaster Tycoon"></option>
+                <option value="Duke Nukem 3D"></option>
+                <option value="Outlaws"></option>
+                <option value="Shadow Warrior"></option>
+            </datalist>
+            <img src="../img/pagina_principal/lupa.png" id="botao_busca" onclick="realizarBusca()">
+            <a href="pagina_carrinho.html">
+                <img class="carrinho" src="../img/pagina_principal/carrinho.png" width="30px">
+            </a>
+        </span>
+    </header>
+    <main>
+            <h1>
+                Outlaws + A Handful of Missions 
+            </h1>
+            <div class="row">
+                <div class="left-side">
+                    <div class="img-sub">
+                        <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-01.jpg" alt="Imagem secundária outlaws"></div>
+                        <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-02.jpg" alt="Imagem secundária outlaws"></div>
+                        <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-03.jpg" alt="Imagem secundária outlaws"></div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="front-details">
+                        <div class="game-img">
+                            <img src="../img/jogo11/outlaws-header.jpg" alt="Imagem principal outlaws">
+                        </div>
+                        <div class="container">
+                            <div class="voting">
+                                <button id="likebtn">
+                                    <i class="fa fa-thumbs-up"></i>
+                                </button>
+                                <input type="number" id="input1" value="0" name="">
+            
+                                <button id="dislikebtn">
+                                    <i class="fa fa-thumbs-down"></i>
+                                </button>
+                                <input type="number" id="input2" value="0" name="">
+                            </div>
+                        </div>
+                        <div class="game-description">
+                            <p>
+                                Get ready for the good, the bad, and the even worse. As Marshall James Anderson, you'll face a horde of ornery, gun-slinging outlaws. You'll shoot your way through a twisted plot of greed and revenge. You'll arm yourself with firearms, as well as your wits.
+                            </p>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td>Todas as análises</td>
+                                    <td>--Link--</td>
+                                </tr>
+                                <tr>
+                                    <td>Data de Lançamento</td>
+                                    <td>31/mar./1997</td>
+                                </tr>
+                                <tr>
+                                    <td>Desenvolvedor</td>
+                                    <td><a href="https://store.steampowered.com/search/?developer=LucasArts">LucasArts</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Distribuidora</td>
+                                    <td><a href="https://store.steampowered.com/search/?publisher=Disney">Disney</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <hr>
         <div class="row">
             <div class="left-side">
-                <div class="img-sub">
-                    <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-01.jpg" alt="Imagem secundária outlaws"></div>
-                    <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-02.jpg" alt="Imagem secundária outlaws"></div>
-                    <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-03.jpg" alt="Imagem secundária outlaws"></div>
+                <div class="alert-idioma">
+                    <h3>
+                        Indisponível em Português(Brasil)
+                    </h3>
+                    Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
+                    antes de comprar.
+                </div>
+
+                <div class="game-details">
+                    <h2>
+                        Sobre este jogo
+                    </h2>
+                    <hr>
+                    Welcome home, pardner! We've been waiting for you here in the town of Sanctuary. Take your boots off and sit a spell. Ex-Marshal James Anderson lived a quiet life with his wife and daughter. One black day that life was shattered by a fancy-dressed, greed driven land baron intent on plowing down his farm to make way for the railroad. Now Anderson's driven by revenge, which he'll exact in a spray of gunfire.
+                    <br>
+                    Get ready for the good, the bad, and the even worse. As Marshall James Anderson, you'll face a horde of ornery, gun-slinging outlaws. You'll shoot your way through a twisted plot of greed and revenge. You'll arm yourself with firearms, as well as your wits. So go ahead, and make your day.
+                    <br>
+                    <li>Highly stylized characters with distinct personalities and weapons.</li>
+                    <li>Gameplay involving puzzle solving to tease the mind as well as the trigger finger.</li>
+                    <li>Combines first-person Gun Slinging Action and Wild West Adventure in one game.</li>
+                </div>
+                <div>
+                    <h2>
+                        Requisistos de Sistema
+                    </h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>OS:</td>
+                            <td>Windows XP or newer</td>
+                        </tr>
+                        <tr>
+                            <td>Processador:</td>
+                            <td>1.8 GHz Processor</td>
+                        </tr>
+                        <tr>
+                            <td>Memória:</td>
+                            <td>1 GB de RAM</td>
+                        </tr>
+                        <tr>
+                            <td>Espaço em Disco:</td>
+                            <td> 651 MB de espaço disponível</td>
+                        </tr>
+                        <tr>
+                            <td>Placa de Video:</td>
+                            <td>3D graphics card compatible with DirectX 7</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="right-side">
-                <div class="front-details">
-                    <div class="game-img">
-                        <img src="../img/jogo11/outlaws-header.jpg" alt="Imagem principal outlaws">
-                    </div>
-                    <div class="container">
-                        <div class="voting">
-                            <button id="likebtn">
-                                <i class="fa fa-thumbs-up"></i>
-                            </button>
-                            <input type="number" id="input1" value="0" name="">
-        
-                            <button id="dislikebtn">
-                                <i class="fa fa-thumbs-down"></i>
-                            </button>
-                            <input type="number" id="input2" value="0" name="">
-                        </div>
-                    </div>
-                    <div class="game-description">
-                        <p>
-                            Get ready for the good, the bad, and the even worse. As Marshall James Anderson, you'll face a horde of ornery, gun-slinging outlaws. You'll shoot your way through a twisted plot of greed and revenge. You'll arm yourself with firearms, as well as your wits.
-                        </p>
-                    </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <td>Todas as análises</td>
-                                <td>--Link--</td>
-                            </tr>
-                            <tr>
-                                <td>Data de Lançamento</td>
-                                <td>31/mar./1997</td>
-                            </tr>
-                            <tr>
-                                <td>Desenvolvedor</td>
-                                <td><a href="https://store.steampowered.com/search/?developer=LucasArts">LucasArts</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Distribuidora</td>
-                                <td><a href="https://store.steampowered.com/search/?publisher=Disney">Disney</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                <div class="status-side">
+                    <table>
+                        <tr>
+                            <td>Título:</td>
+                            <td>Outlaws</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero:</td>
+                            <td>Ação</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento:</td>
+                            <td>31/mar./1997</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvedor:</td>
+                            <td><a href="https://store.steampowered.com/search/?developer=LucasArts">LucasArts</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distribuidora:</td>
+                            <td><a href="https://store.steampowered.com/search/?publisher=Disney">Disney</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jogadores: </td>
+                            <td>Um jogador</td>
+                        </tr>
+                        <tr>
+                            <td>Idiomas:</td>
+                            <td>Inglês</td>
+                        </tr>
+                        <tr>
+                            <td>Dublagem:</td>
+                            <td>Inglês</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
-    </header>
-    <hr>
-    <div class="row">
-        <div class="left-side">
-            <div class="alert-idioma">
-                <h3>
-                    Indisponível em Português(Brasil)
-                </h3>
-                Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
-                antes de comprar.
-            </div>
-
-            <div class="game-details">
-                <h2>
-                    Sobre este jogo
-                </h2>
-                <hr>
-                Welcome home, pardner! We've been waiting for you here in the town of Sanctuary. Take your boots off and sit a spell. Ex-Marshal James Anderson lived a quiet life with his wife and daughter. One black day that life was shattered by a fancy-dressed, greed driven land baron intent on plowing down his farm to make way for the railroad. Now Anderson's driven by revenge, which he'll exact in a spray of gunfire.
-                <br>
-                Get ready for the good, the bad, and the even worse. As Marshall James Anderson, you'll face a horde of ornery, gun-slinging outlaws. You'll shoot your way through a twisted plot of greed and revenge. You'll arm yourself with firearms, as well as your wits. So go ahead, and make your day.
-                <br>
-                <li>Highly stylized characters with distinct personalities and weapons.</li>
-                <li>Gameplay involving puzzle solving to tease the mind as well as the trigger finger.</li>
-                <li>Combines first-person Gun Slinging Action and Wild West Adventure in one game.</li>
-            </div>
-            <div>
-                <h2>
-                    Requisistos de Sistema
-                </h2>
-                <hr>
-                <table>
-                    <tr>
-                        <td>OS:</td>
-                        <td>Windows XP or newer</td>
-                    </tr>
-                    <tr>
-                        <td>Processador:</td>
-                        <td>1.8 GHz Processor</td>
-                    </tr>
-                    <tr>
-                        <td>Memória:</td>
-                        <td>1 GB de RAM</td>
-                    </tr>
-                    <tr>
-                        <td>Espaço em Disco:</td>
-                        <td> 651 MB de espaço disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Placa de Video:</td>
-                        <td>3D graphics card compatible with DirectX 7</td>
-                    </tr>
-                </table>
-            </div>
+        <div class="analises">
+            <h1>Análises de Usuários</h1>
+            <table>
+                <tr>
+                    <td class="coluna1_avaliacao">
+                        <span class="estrela">★★★★★</span><br>
+                        <b>5,0 de 5 estrelas</b><br>
+                    </td>
+                    <td>
+                        <h5>
+                            Confira as opiniões dos clientes sobre este produto
+                        </h5>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                            <p>Em sua "época", joguei esse jogo por mais horas do que haviam disponíveis num único dia.
+                                Clássico, controverso, polêmico, mas, acima de tudo, muito divertido e original.
+                            </p>
+                            <p><b>Tony</b> - 0.2h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★</span>
+                            <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                            <p>Top demais.</p>
+                            <p><b>или</b> - 1.2h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-down"></i>Não recomendado</b></b></b></p>
+                            <p>Não consigo iniciar o jogo... Ás configurações do meu PC são absurdas, então não é
+                                isso...
+                            </p>
+                            <p><b>Pepsiftw</b> - 40.0h jogadas</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--<table>
+                <tr>
+                    <td class="coluna1_avaliacao">
+                        <span class="estrela">★★★★★</span><br>
+                        <b>5,0 de 5 estrelas</b><br>
+                    </td>
+                    <td>
+                        <div class="user">
+                            <img id="user_foto" src="../img/jogo11/outlaws-img-user-01.jpg">
+                            <p>Rec_Soldier</p>
+                        </div>
+                        <div class="user">
+                            <img id="user_foto" src="../img/jogo11/outlaws-img-user-02.jpg">
+                            <p>Cypriano</p>
+                        </div>
+                        <div class="user">
+                            <img id="user_foto" src="../img/jogo11/outlaws-img-user-03.jpg">
+                            <p>Ds</p>
+                        </div>
+                    </td>
+                    <td>
+                        
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p>Jogo que marcou minha infância no Windows 98SE! Tenho os 2 CDs originais totalmente em Português até hoje. É uma pena que a versão digital tanto na GOG quanto na Steam estão em inglês. Porém eu fiz a cópia do áudio do meu cd e disponibilizei no fórum do jogo aqui na Steam. É só procurar e baixar e jogar na raiz do jogo.</p>
+                            <p><b>PUBLICADA: 21 DE MAIO DE 2020</b></p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p>Simplesmente um dos melhores jogos de tiro com história que já existiu.
+                                Para os padrões da época, Outlaws era muito inovador principalmente com uma dublagem excepcional em português.
+                                
+                                Seus 7 reais valem testar esse jogo antigo?
+                                Definitivamente.</p>
+                            <p><b>PUBLICADA: 19 DE NOVEMBRO DE 2018</b></p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>  
+                            <p>Que nostalgia! Jogava muito quando era criança. Até hoje tenho o cd original que contém a OST do jogo, que é SENSACIONAL!
+                                Um dos melhores jogos de faroeste. História simples mas envolvente, ótima dublagem (pena que não tem a versão em português) e alguns easter eggs engraçados.
+                                O jogo é divertido e oferece um bom desafio na maior dificuldade. Recomendo muito.</p>
+                            <p><b>PUBLICADA: 19 DE NOVEMBRO DE 2018</b></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>-->
         </div>
-        <div class="right-side">
-            <div class="status-side">
-                <table>
-                    <tr>
-                        <td>Título:</td>
-                        <td>Outlaws</td>
-                    </tr>
-                    <tr>
-                        <td>Gênero:</td>
-                        <td>Ação</td>
-                    </tr>
-                    <tr>
-                        <td>Lançamento:</td>
-                        <td>31/mar./1997</td>
-                    </tr>
-                    <tr>
-                        <td>Desenvolvedor:</td>
-                        <td><a href="https://store.steampowered.com/search/?developer=LucasArts">LucasArts</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Distribuidora:</td>
-                        <td><a href="https://store.steampowered.com/search/?publisher=Disney">Disney</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jogadores: </td>
-                        <td>Um jogador</td>
-                    </tr>
-                    <tr>
-                        <td>Idiomas:</td>
-                        <td>Inglês</td>
-                    </tr>
-                    <tr>
-                        <td>Dublagem:</td>
-                        <td>Inglês</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="qualquer-coisa">
-                Alguma coisa
-            </div>
-        </div>
-    </div>
-    <div class="analises">
-        <h1>Análises de Usuários</h1>
-        <table>
-            <tr>
-               <!-- <td class="coluna1_avaliacao">
-                    <span class="estrela">★★★★★</span><br>
-                    <b>5,0 de 5 estrelas</b><br>
-                </td>-->
-                <td>
-                    <div class="user">
-                        <img id="user_foto" src="../img/jogo11/outlaws-img-user-01.jpg">
-                        <p>Rec_Soldier</p>
-                    </div>
-                    <div class="user">
-                        <img id="user_foto" src="../img/jogo11/outlaws-img-user-02.jpg">
-                        <p>Cypriano</p>
-                    </div>
-                    <div class="user">
-                        <img id="user_foto" src="../img/jogo11/outlaws-img-user-03.jpg">
-                        <p>Ds</p>
-                    </div>
-                </td>
-                <td>
-                    
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>
-                        <p>Jogo que marcou minha infância no Windows 98SE! Tenho os 2 CDs originais totalmente em Português até hoje. É uma pena que a versão digital tanto na GOG quanto na Steam estão em inglês. Porém eu fiz a cópia do áudio do meu cd e disponibilizei no fórum do jogo aqui na Steam. É só procurar e baixar e jogar na raiz do jogo.</p>
-                        <p><b>PUBLICADA: 21 DE MAIO DE 2020</b></p>
-                    </div>
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>
-                        <p>Simplesmente um dos melhores jogos de tiro com história que já existiu.
-                            Para os padrões da época, Outlaws era muito inovador principalmente com uma dublagem excepcional em português.
-                            
-                            Seus 7 reais valem testar esse jogo antigo?
-                            Definitivamente.</p>
-                        <p><b>PUBLICADA: 19 DE NOVEMBRO DE 2018</b></p>
-                    </div>
-                    <div class="comentario">
-                        <span class="estrela">★★★★★</span>  
-                        <p>Que nostalgia! Jogava muito quando era criança. Até hoje tenho o cd original que contém a OST do jogo, que é SENSACIONAL!
-                            Um dos melhores jogos de faroeste. História simples mas envolvente, ótima dublagem (pena que não tem a versão em português) e alguns easter eggs engraçados.
-                            O jogo é divertido e oferece um bom desafio na maior dificuldade. Recomendo muito.</p>
-                        <p><b>PUBLICADA: 19 DE NOVEMBRO DE 2018</b></p>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <footer>
-        Footer
-    </footer>
+    </main>
+<!-- rodapé -->
+<footer>
+    © 2022 Old Games Inc.
+</footer>
+<script src="../js/script_paginas_jogos.js"></script>
 </body>
 
-<script type="text/javascript">
-    let likebtn = document.querySelector('#likebtn');
-    let dislikebtn = document.querySelector('#dislikebtn');
-    let input1 = document.querySelector('#input1');
-    let input2 = document.querySelector('#input2');
-
-    likebtn.addEventListener('click', ()=>{
-        input1.value = parseInt(input1.value) + 1;
-        input1.style.color = "#000000";
-    })
-
-    dislikebtn.addEventListener('click', ()=>{
-        input2.value = parseInt(input2.value) + 1;
-        input2.style.color = "#000000";
-    })
-</script>
 
 </html>
