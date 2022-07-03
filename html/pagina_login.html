@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="tela login" content="Login">
+    <meta name="Tela de login" content="username,password,login">
+    <link rel="stylesheet" type="text/css" href="../css/style_pagina_login.css">
+    <title>Tela de login</title>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="screen">     
+            <div class="conteudo_screen">              
+                <h2>BEM-VINDO</h2>
+                <div class="login-inputs-all">
+                    <div class="login-inputs">
+                    <label  for="user" style="color: black;"><b>Username</b></label>
+                    <br>
+                    <input id="user" type="text"  name="user" required>
+                </div>
+                <div class="login-inputs">
+                    <label  for="password" style="color: black;"><b>Password</b></label>
+                    <br>
+                    <input id="senha" type="password" name="password" required>
+                </div>        
+                <button onclick="logar()" type="submit">Login</button>
+                <br>
+                <p id="sucesso" style="display: none;">Usuario e senha validado</p>
+                <div class="assist-login">
+                    <labe>
+                        <input type="checkbox" checked="checked" name="lembrar">Remember me
+                    </labe>
+                  
+                    <ul class="login-utils">
+                        <li class="margin-bottom-8 margin-top-8">
+                            <span class="text1">
+                                Esqueceu sua
+                            </span>
+                                
+                            <a href="#" class="text2">
+                                senha?
+                            </a>
+                        </li>    
+                        <li>
+                            <span class="text1">
+                                Não tem conta?
+                            </span>
+    
+                            <a href="#" class="text2">
+                                Criar
+                            </a>
+    
+
+                </div>
+                
+                </div>
+                
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <script src="../js/script_pagina_login.js"></script>
+</body>
+</html>
