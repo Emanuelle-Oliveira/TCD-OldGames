@@ -1,0 +1,305 @@
+/* Corpo da Página */
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(219, 219, 219);
+}
+
+header {
+    background-color: black;
+    color: #f2f000;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    /* max-width: 100%;
+    width: auto; */
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 2px black;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+footer {
+    height: 20px;
+    margin-top: 40px;
+    background-color: black;
+    color: #f2f000;
+    padding: 30px;
+    text-align: center
+}
+
+.logo {
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.carrinho {
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.carrinho:hover {
+    width: 35px;
+    transition: 0.3s;
+}
+
+.direita_hero {
+    float: right;
+    display: inline;
+    vertical-align: middle;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#busca_jogo {
+    width: 200px;
+    height: 36px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+}
+
+#botao_busca {
+    width: 25px;
+    height: 25px;
+    background-color: #f2f000;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 0;
+    cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/* Textos */
+datalist {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 54px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    color: black;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
+}
+
+h5 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estrutura da Página */
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-side {
+    flex: 70%;
+    padding: 20px;
+}
+
+.right-side {
+    flex: 30%;
+    padding: 20px;
+}
+
+.game-img {
+    justify-content: center;
+}
+
+.sub-img {
+    cursor: pointer;
+}
+
+.slide-img {
+    height: 100%;
+    width: auto;
+    max-width: 600px;
+    max-height: 337px;
+    display: none;
+}
+
+.img-sub {
+    display: flex;
+    justify-content: center;
+}
+
+.row-padding {
+    display: flex;
+    justify-content: center;
+}
+
+.img-sub img {
+    width: 115px;
+    height: 65px;
+    margin: 10px;
+}
+
+/* Detalhes */
+
+onclick {
+    border: 1px solid #f2f000;
+}
+
+.alert-idioma {
+    border: 1px solid #f2f000;
+    /* amarelo que não lembro */
+    text-align: center;
+
+}
+
+.status-side {
+    /* background-color: #aaa; */
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+
+.qualquer-coisa {
+    background-color: #ddd;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+
+}
+
+.analises {
+    background-color: #ddd;
+    width: 100%;
+    /* height: 200px; */
+    padding: 20px;
+
+}
+
+/*botao de like e dislike*/
+.container {
+    /* border: 2px solid #303030; */
+    padding: 5px;
+    width: 98%;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    justify-content: center;
+}
+
+.voting {
+    position: relative;
+    border: 2px solid #303030;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.input-voting {
+    width: 50px;
+    border: none;
+    background: none;
+    color: #919191;
+    font-size: 15px;
+    margin: 0 10px;
+    pointer-events: none;
+}
+
+button {
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding: 0 15px;
+    margin: 10px 0;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+button:active {
+    color: #f2f000;
+    transform: scale(1.2);
+}
+
+/*tabela de avaliações*/
+.coluna1_avaliacao {
+    width: 30%;
+    font-size: 22px;
+    vertical-align: top;
+}
+
+.comentario {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    border: 1px solid #f2f000;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 150px;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.user {
+    padding-top: 12px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    height: 150px;
+    border: 1px solid #f2f000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
