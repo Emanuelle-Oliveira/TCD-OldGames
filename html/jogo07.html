@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Diablo">
+    <title>Diablo (1996)</title>
+    <!--Importação de stylesheets  -->
+    <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <a href="pagina_principal.html">
+            <img class="logo" src="../img/pagina_principal/logo.png" width="58px"></a>
+        <span class="titulo">Old Games</span>
+        <span class="direita_hero">
+            <input type="search" id="busca_jogo" list="lista_jogos">
+            <datalist id="lista_jogos">
+                <option value="Grand Theft Auto"></option>
+                <option value="The Ultimate Doom"></option>
+                <option value="Worms Armageddon"></option>
+                <option value="Doom II"></option>
+                <option value="Wolfenstein 3D"></option>
+                <option value="Quake"></option>
+                <option value="Diablo"></option>
+                <option value="Half-Life"></option>
+                <option value="RollerCoaster Tycoon"></option>
+                <option value="Duke Nukem 3D"></option>
+                <option value="Outlaws"></option>
+                <option value="Shadow Warrior"></option>
+            </datalist>
+            <img src="../img/pagina_principal/lupa.png" id="botao_busca" onclick="realizarBusca()">
+            <a href="pagina_carrinho.html">
+                <img class="carrinho" src="../img/pagina_principal/carrinho.png" width="30px">
+            </a>
+        </span>
+    </header>
+    <!-- Conteudo principal -->
+    <main>
+        <h1>
+            Diablo
+        </h1>
+        <!-- Função slide de imagens -->
+        <div class="row">
+            <div class="left-side">
+                <div class="img-sub">
+                    <div class="sub-img"><img src="../img/jogo07/diablosecundaria1.jpg" alt="Imagem secundária Diablo"
+                            onclick="currentDiv(1)"></div>
+                    <div class="sub-img"><img src="../img/jogo07/diablosecundaria2.jpg" alt="Imagem secundária Diablo"
+                            onclick="currentDiv(2)"></div>
+                    <div class="sub-img"><img src="../img/jogo07/diablosecundaria3.jpg" alt="Imagem secundária Diablo"
+                            onclick="currentDiv(3)"></div>
+                </div>
+
+                <div class="row-padding">
+                    <img class="slide-img" src="../img/jogo07/diablosecundaria1.jpg">
+                    <img class="slide-img" src="../img/jogo07/diablosecundaria2.jpg" style="display:block !important;">
+                    <img class=" slide-img" src="../img/jogo07/diablosecundaria3.jpg">
+                </div>
+            </div>
+            <div class=" right-side">
+                <div class="front-details">
+                    <div class="game-img">
+                        <img src="../img/jogo07/diabloheader.webp" alt="Imagem principal Diablo">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input1" value="0" name="">
+
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input2" value="0" name="">
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        <p>
+                            Originalmente desenvolvido pela Synergistic Software e lançado em 1997, 
+                            Hellfire não era um produto oficial da Blizzard e não trazia o endosso ou rótulo da Blizzard. 
+                            Apesar disso, em resposta aos jogadores de Diablo que expressaram o desejo de experimentar o conteúdo,
+                             a Blizzard deu o OK para que ele fosse incluído como um complemento gratuito nas compras de Diablo 
+                             no OLDGAMES.COM.
+                            Hellfire oferece um enredo para um jogador não canônico, onde os jogadores devem derrotar um 
+                            poderoso demônio chamado Na-Krul, que está ameaçando Tristram.
+                             A expansão também adiciona uma classe Monk, novas armas e itens, novas missões, locais,
+                              masmorras e inimigos. Hellfire estará acessível durante o lançamento do Diablo original.
+                        </p>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Todas as análises</td>
+                                <td>--Link--</td>
+                            </tr>
+                            <tr>
+                                <td>Data de Lançamento</td>
+                                <td>31/dez./1996</td>
+                            </tr>
+                            <tr>
+                                <td>Desenvolvedor</td>
+                                <td><a href="https://www.blizzard.com/pt-br/">Blizzard Entertainment, Inc.</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Distribuidora</td>
+                                <td><a href="https://www.blizzard.com/pt-br/">Blizzard Entertainment, Inc.</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="left-side">
+                <div class="alert-idioma">
+                    <h3>
+                        Indisponível em Português(Brasil)
+                    </h3>
+                    Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
+                    antes de comprar.
+                </div>
+
+                <div class="game-details">
+                    <h2>
+                        Sobre este jogo
+                    </h2>
+                    <!-- <hr> -->
+                    <b>
+                        Viajante, fique um pouco e ouça...
+                    </b>
+                    <br>
+                    A escuridão se agita sob Tristram. Um mal antigo varre a terra, mergulhando-a na guerra civil 
+                    e aterrorizando a população. Um rei louco, seu filho desaparecido e um arcebispo misterioso 
+                    são todas as peças do quebra-cabeça que você precisa desvendar. Você viajou para a fonte desse mal.
+                     A cidade de Tristram - agora habitada apenas por um punhado de sobreviventes, quebrada e distorcida 
+                     pela loucura que se abateu sobre eles. Uma catedral fica ali, construída sobre as ruínas de um antigo
+                      mosteiro. Luzes misteriosas e sons ímpios são ouvidos ecoando por seus corredores abandonados,
+                       e é aí que você deve se aventurar.
+                    <br>
+                </div>
+                <div>
+                    <h2>
+                        Requisistos de Sistema
+                    </h2>
+                    <!-- <hr> -->
+                    <table>
+                        <tr>
+                            <td>OS:</td>
+                            <td>Windows 95</td>
+                        </tr>
+                        <tr>
+                            <td>Processador:</td>
+                            <td>Intel Pentium - 60 </td>
+                        </tr>
+                        <tr>
+                            <td>Memória:</td>
+                            <td> 8Mb de RAM e 16Mb para o multiplayer</td>
+                        </tr>
+                        <tr>
+                            <td>Espaço em Disco:</td>
+                            <td>80 Mb de armazenamento</td>
+                        </tr>
+                        <tr>
+                            <td>Placa de Video:</td>
+                            <td>Display SVGA</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="status-side">
+                    <table>
+                        <tr>
+                            <td>Título:</td>
+                            <td> Diablo</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero:</td>
+                            <td>Ação, RPG, Hack'n'Slash</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento:</td>
+                            <td>31/dez./1996</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvedor:</td>
+                            <td><a href="https://www.blizzard.com/pt-br/">Blizzard Entertainment, Inc.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distribuidora:</td>
+                            <td><a href="https://www.blizzard.com/pt-br/">Blizzard Entertainment, Inc.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jogadores: </td>
+                            <td>Um jogador, Multiplayer.</td>
+                        </tr>
+                        <tr>
+                            <td>Idiomas:</td>
+                            <td>Inglês</td>
+                        </tr>
+                        <tr>
+                            <td>Dublagem:</td>
+                            <td>Indisponível</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="analises">
+            <h1>Análises de Usuários</h1>
+            <table>
+                <tr>
+                    <td class="coluna1_avaliacao">
+                        <span class="estrela">★★★★★</span><br>
+                        <b>5,0 de 5 estrelas</b><br>
+                    </td>
+                    <td>
+                        <h5>
+                            Confira as opiniões dos clientes sobre este produto
+                        </h5>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                            <p> Diablo is old and clunky but still a blast to play. It's one of those games you need to try atleast once in your life. 
+                            </p>
+                            <p><b>Unclean</b> - 9.5h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★</span>
+                            <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                            <p>Inacreditável! Finalmente posso jogar DIABLO na minha plataforma favorita, a OG!  </p>
+                            <p><b>OG_sky_cafuc</b> - 6.2h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-down"></i> Não recomendado</b></b></b></p>
+                            <p>O preço tá muito alto... Posso ir na BLIZZARD e comprar por lá!
+                            </p>
+                            <p><b>DooMSandro</b> - 5.1h jogadas</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <!-- rodapé -->
+    <footer>
+        © 2022 Old Games Inc.
+    </footer>
+    <script src="../js/script_paginas_jogos.js"></script>
+</body>
+
+
+</html>
