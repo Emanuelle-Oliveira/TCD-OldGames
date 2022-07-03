@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Old Games</title>
+    <link rel="stylesheet" type="text/css" href="../css/style_pagina_principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="../img/pagina_principal/logo.png" width="58px">
+        <span class="titulo">Old Games</span>
+        <span class="direita_hero">
+            <input type="search" id="busca_jogo" list="lista_jogos">
+            <datalist id="lista_jogos">
+                <option value="Grand Theft Auto"></option>
+                <option value="The Ultimate Doom"></option>
+                <option value="Worms Armageddon"></option>
+                <option value="Doom II"></option>
+                <option value="Wolfenstein 3D"></option>
+                <option value="Quake"></option>
+                <option value="Diablo"></option>
+                <option value="Half-Life"></option>
+                <option value="RollerCoaster Tycoon"></option>
+                <option value="Duke Nukem 3D"></option>
+                <option value="Outlaws"></option>
+                <option value="Shadow Warrior"></option>
+            </datalist>
+            <img src="../img/pagina_principal/lupa.png" id="botao_busca" onclick="realizarBusca()">
+            <a id="car-principal" onclick="abrircarro()">
+                <img class="carrinho" src="../img/pagina_principal/carrinho.png" width="30px">
+            </a>
+        </span>
+    </header>
+    <!-- /aside do carrinho de compras  -->
+    <aside>
+        <div id="carrinho" style="display: none;">
+            <div class="menu-closer"><button onclick="fecharcarro()">❌</button></div>
+            <h1>Itens</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <ol id="lista-produtos">
+                </ol>               
+                <div class="cart--totalitem total big">
+                    <span>Valor da compra R$: </span>
+                    <span id="total">0,00</span>
+                </div>
+                <div class="cart--finalizar"><button id="botton-fechar" onclick="finalizarCompra()" >finalizar a compra</button></div>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="carrossel">
+            <div class="container" id="img">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo01.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo02.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo03.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo04.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo05.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo06.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo07.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo08.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo09.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo10.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo11.jpg">
+                <img class="img_carrossel" src="../img/pagina_principal/jogo12.jpg">
+            </div>
+        </div>
+        <h2>
+            1990
+        </h2>
+        <table>
+            <tr>
+                <td class="tdimg">
+                    <a href="jogo01.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo01.jpg" width="100%">
+                    </a>
+                            <h3>Grand Theft Auto</h3>
+                            <h4>
+                                R$ 10,98
+                                <button onclick="addCarrinho()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome1" style="display: none;">Grand Theft Auto</p>
+                                    <p id="preco1" style="display: none;">10.98</p>
+                                </button>
+                            </h4>
+                        </div>   
+                </td>
+                <td class="tdimg">
+                    <a href="jogo02.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo02.jpg" width="100%">
+                    </a>
+                            <h3>Ultimate Doom</h3>
+                            <h4>
+                                R$ 2,24
+                                <button onclick="addCarrinho2()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome2" style="display: none;">Ultimate Doom</p>
+                                    <p id="preco2" style="display: none;">2.24</p>
+                                </button>
+                            </h4>
+                        </div>   
+                    
+                </td>
+                <td class="tdimg">
+                    <a href="jogo03.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo03.jpg" width="100%">
+                    </a>
+                            <h3>Worms Armageddon</h3>
+                            <h4>
+                                R$ 4,19
+                                <button onclick="addCarrinho3()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome3" style="display: none;">Worms Armageddon</p>
+                                    <p id="preco3" style="display: none;">4.19</p>
+                                </button>
+                            </h4>
+                        </div>   
+                    
+                </td>
+                <td class="tdimg">
+                    <a href="jogo04.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo04.jpg" width="100%">
+                    </a>
+                            <h3>Doom II</h3>
+                            <h4>
+                                R$ 2,24
+                                <button onclick="addCarrinho4()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome4" style="display: none;">Doom II</p>
+                                    <p id="preco4" style="display: none;">2.24</p>
+                                </button>
+                            </h4>
+                        </div>   
+                 
+                </td>
+            </tr>
+            <tr>
+                <td class="tdimg">
+                    <a href="jogo05.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo05.jpg" width="100%">
+                    </a>
+                            <h3>Wolfenstein 3D</h3>
+                            <h4>
+                                R$ 2,69
+                                <button onclick="addCarrinho5()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome5" style="display: none;">Wolfenstein 3D</p>
+                                    <p id="preco5" style="display: none;">2.69</p>
+                                </button>
+                            </h4>
+                        </div>   
+                   
+                </td>
+                <td class="tdimg">
+                    <a href="jogo06.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo06.jpg" width="100%">
+                    </a>
+                            <h3>QUAKE</h3>
+                            <h4>
+                                R$ 11,99
+                                <button onclick="addCarrinho6()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome6" style="display: none;">QUAKE</p>
+                                    <p id="preco6" style="display: none;">11.99</p>
+                                </button>
+                            </h4>
+                        </div>   
+                    
+                </td>
+                <td class="tdimg">
+                    <a href="jogo07.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo07.jpg" width="100%">
+                    </a>
+                            <h3>Diablo</h3>
+                            <h4>
+                                R$ 48,19
+                                <button onclick="addCarrinho7()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome7" style="display: none;">Diablo</p>
+                                    <p id="preco7" style="display: none;">48.19</p>
+                                </button>
+                            </h4>
+                        </div>   
+                </td>
+                <td class="tdimg">
+                    <a href="jogo08.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo08.jpg" width="100%">
+                    </a>
+                            <h3>Half-Life</h3>
+                            <h4>
+                                R$ 4,13
+                                <button onclick="addCarrinho8()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome8" style="display: none;">Half-Life</p>
+                                    <p id="preco8" style="display: none;">4.13</p>
+                                </button>
+                            </h4>
+                        </div>                    
+                </td>
+            </tr>
+            <tr>
+                <td class="tdimg">
+                    <a href="jogo09.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo09.jpg" width="100%">
+                    </a>
+                            <h3>RollerCoaster Tycoon</h3>
+                            <h4>
+                                R$ 2,99
+                                <button onclick="addCarrinho9()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome9" style="display: none;">RollerCoaster Tycoon</p>
+                                    <p id="preco9" style="display: none;">2.99</p>
+                                </button>
+                            </h4>
+                        </div>   
+                   
+                </td>
+                <td class="tdimg">
+                    <a href="jogo10.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo10.jpg" width="100%">
+                    </a>
+                            <h3>Duke Nukem 3D</h3>
+                            <h4>
+                                R$ 3,69
+                                <button onclick="addCarrinho10()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome10" style="display: none;">Duke Nukem 3D</p>
+                                    <p id="preco10" style="display: none;">3.69</p>
+                                </button>
+                            </h4>
+                        </div>   
+                   
+                </td>
+                <td class="tdimg">
+                    <a href="jogo11.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo11.jpg" width="100%">
+                    </a>
+                            <h3>Outlaws</h3>
+                            <h4>
+                                R$ 4,33
+                                <button onclick="addCarrinho11()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome11" style="display: none;">Outlaws</p>
+                                    <p id="preco11" style="display: none;">4.33</p>
+                                </button>
+                            </h4>
+                        </div>                    
+                </td>
+                <td class="tdimg">
+                    <a href="jogo12.html">
+                        <div class="descricao">
+                            <img class="imgtable" src="../img/pagina_principal/jogo12.jpg" width="100%">
+                    </a>
+                            <h3>Shadow Warrior</h3>
+                            <h4>
+                                R$ 14,18
+                                <button onclick="addCarrinho12()" type="submit">
+                                    <span class="botao">
+                                        <img class="carrinhobotao" src="../img/pagina_principal/carrinho.png" width="20px">
+                                    </span>
+                                    <p id="nome12" style="display: none;">Shadow Warrior</p>
+                                    <p id="preco12" style="display: none;">14.18</p>
+                                </button>
+                            </h4>
+                        </div>                      
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        Old Games
+    </footer>
+    <script src="../js/script_pagina_principal.js"></script>
+    <script src="../js/script_pagina_carrinho.js"></script>
+</body>
+</html>
