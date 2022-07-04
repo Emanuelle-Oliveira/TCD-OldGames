@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shadow Warrior Classic 1997">
+    <title>Shadow Warrior Classic (1997)</title>
+
+    <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--Importação de stylesheets  -->
+    <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <a href="pagina_principal.html">
+            <img class="logo" src="../img/pagina_principal/logo.png" width="58px"></a>
+        <span class="titulo">Old Games</span>
+        <span class="direita_hero">
+            <input type="search" id="busca_jogo" list="lista_jogos">
+            <datalist id="lista_jogos">
+                <option value="Grand Theft Auto"></option>
+                <option value="The Ultimate Doom"></option>
+                <option value="Worms Armageddon"></option>
+                <option value="Doom II"></option>
+                <option value="Wolfenstein 3D"></option>
+                <option value="Quake"></option>
+                <option value="Diablo"></option>
+                <option value="Half-Life"></option>
+                <option value="RollerCoaster Tycoon"></option>
+                <option value="Duke Nukem 3D"></option>
+                <option value="Outlaws"></option>
+                <option value="Shadow Warrior"></option>
+            </datalist>
+            <img src="../img/pagina_principal/lupa.png" id="botao_busca" onclick="realizarBusca()">
+            <a href="pagina_carrinho.html">
+                <img class="carrinho" src="../img/pagina_principal/carrinho.png" width="30px">
+            </a>
+        </span>
+    </header>
+    <main>
+            <h1>
+                Shadow Warrior Classic 
+            </h1>
+            <!-- Função slide de imagens -->
+            <div class="row">
+                <div class="left-side">
+                    <div class="img-sub">
+                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-01.jpg" alt="Imagem secundária shadow warrior "
+                                onclick="currentDiv(1)"></div>
+                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-02.jpg" alt="Imagem secundária shadow warrior"
+                                onclick="currentDiv(2)"></div>
+                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-03.jpg" alt="Imagem secundária shadow warrior"
+                                onclick="currentDiv(3)"></div>
+                    </div>
+
+                    <div class="row-padding">
+                        <img class="slide-img" src="../img/jogo12/shadowWarrior-img-sub-01.jpg">
+                        <img class="slide-img" src="../img/jogo12/shadowWarrior-img-sub-02.jpg" style="display:block !important;">
+                        <img class=" slide-img" src="../img/jogo12/shadowWarrior-img-sub-03.jpg">
+                    </div>
+                </div>
+                <div class=" right-side">
+                    <div class="front-details">
+                        <div class="game-img">
+                            <img src="../img/jogo12/shadowWarrior-header.jpg" alt="Imagem principal shadow warrior">
+                        </div>
+                        <div class="container">
+                            <div class="voting">
+                                <button id="likebtn">
+                                    <i class="fa fa-thumbs-up"></i>
+                                </button>
+                                <input class="input-voting" type="number" id="input1" value="0" name="">
+
+                                <button id="dislikebtn">
+                                    <i class="fa fa-thumbs-down"></i>
+                                </button>
+                                <input class="input-voting" type="number" id="input2" value="0" name="">
+                            </div>
+                        </div>
+                        <div class="game-description">
+                            <p>
+                                Strap on your combat sandals...Lo Wang is coming to the Land of the Rising Sun to turn out the lights. Experience total blood immersion. If you can't touch, kill or drive something...then blow it away! Whether you're wielding shurikens, an Uzi, or a freshly plundered Guardian head...you've got your work cut out for you. Enter the world's most interactive 3D environment...and cut yourself some sushi!
+                            </p>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td>Todas as análises</td>
+                                    <td>--Link--</td>
+                                </tr>
+                                <tr>
+                                    <td>Data de Lançamento</td>
+                                    <td>13/maio/1997</td>
+                                </tr>
+                                <tr>
+                                    <td>Desenvolvedor</td>
+                                    <td><a href="https://store.steampowered.com/search/?developer=3D%20Realms"> 3D Realms</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Distribuidora</td>
+                                    <td><a href="https://store.steampowered.com/publisher/DevolverDigital">Devolver Digital</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <hr>
+        <div class="row">
+            <div class="left-side">
+                <div class="alert-idioma">
+                    <h3>
+                        Indisponível em Português(Brasil)
+                    </h3>
+                    Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
+                    antes de comprar.
+                </div>
+
+                <div class="game-details">
+                    <h2>
+                        Sobre este jogo
+                    </h2>
+                    <hr>
+                    Strap on your combat sandals.
+                    <br>
+                    Lo Wang is coming to the Land of the Rising Sun to turn out the lights. Experience total blood immersion. If you can't touch, kill or drive something...then blow it away!
+                    <br>
+                    Whether you're wielding shurikens, an Uzi, or a freshly plundered Guardian head...you've got your work cut out for you. Enter the world's most interactive 3D environment...and cut yourself some sushi!
+                </div>
+                <div>
+                    <h2>
+                        Requisistos de Sistema
+                    </h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>OS:</td>
+                            <td>Windows XP or Vista</td>
+                        </tr>
+                        <tr>
+                            <td>Processador:</td>
+                            <td>1.8 GHz Processor</td>
+                        </tr>
+                        <tr>
+                            <td>Memória:</td>
+                            <td>512 MB RAM</td>
+                        </tr>
+                        <tr>
+                            <td>Espaço em Disco:</td>
+                            <td>1 GB HD space</td>
+                        </tr>
+                        <tr>
+                            <td>Placa de Video:</td>
+                            <td>DirectX 7 Compatible 3D Graphics Card</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="status-side">
+                    <table>
+                        <tr>
+                            <td>Título:</td>
+                            <td> Grand Theft Auto</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero:</td>
+                            <td>Ação</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento:</td>
+                            <td>13/maio/1997</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvedor:</td>
+                            <td><a href="https://store.steampowered.com/search/?developer=3D%20Realms"> 3D Realms</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distribuidora:</td>
+                            <td><a href="https://store.steampowered.com/publisher/DevolverDigital">Devolver Digital</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jogadores: </td>
+                            <td>Um jogador</td>
+                        </tr>
+                        <tr>
+                            <td>Idiomas:</td>
+                            <td>Inglês</td>
+                        </tr>
+                        <tr>
+                            <td>Dublagem:</td>
+                            <td>Inglês</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="analises">
+            <h1>Análises de Usuários</h1>
+            <table>
+                <tr>
+                    <td class="coluna1_avaliacao">
+                        <span class="estrela">★★★★★</span><br>
+                        <b>5,0 de 5 estrelas</b><br>
+                    </td>
+                    <td>
+                        <h5>
+                            Confira as opiniões dos clientes sobre este produto
+                        </h5>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                            <p>Meu primeiro contato foi com a versão após essa, mas esse não deixa a desejar. Paguei pelo meu, mas agora está grátis...
+                            </p>
+                            <p><b>Felipa</b> - 8.9h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★</span>
+                            <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                            <p>"Who wants some Wang?"</p>
+                            <p><b>FluffyKittenChan</b> - 0.3h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-down"></i>Recomendado</b></b></b></p>
+                            <p>Um clássico de graça? obrigado Steam
+                            </p>
+                            <p><b>WILLIANDVS</b> - 5.7h jogadas</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+<!-- rodapé -->
+<footer>
+    © 2022 Old Games Inc.
+</footer>
+<script src="../js/script_paginas_jogos.js"></script>
+</body>
+
+
+</html>
