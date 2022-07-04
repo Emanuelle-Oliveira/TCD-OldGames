@@ -49,32 +49,42 @@
             <h1>
                 Outlaws + A Handful of Missions 
             </h1>
-            <div class="row">
-                <div class="left-side">
-                    <div class="img-sub">
-                        <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-01.jpg" alt="Imagem secundária outlaws"></div>
-                        <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-02.jpg" alt="Imagem secundária outlaws"></div>
-                        <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-03.jpg" alt="Imagem secundária outlaws"></div>
-                    </div>
+           <!-- Função slide de imagens -->
+           <div class="row">
+            <div class="left-side">
+                <div class="img-sub">
+                    <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-01.jpg" alt="Imagem secundária outlaws"
+                            onclick="currentDiv(1)"></div>
+                    <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-02.jpg" alt="Imagem secundária  outlaws"
+                            onclick="currentDiv(2)"></div>
+                    <div class="sub-img"><img src="../img/jogo11/outlaws-img-sub-03.jpg" alt="Imagem secundária  outlaws"
+                            onclick="currentDiv(3)"></div>
                 </div>
-                <div class="right-side">
-                    <div class="front-details">
-                        <div class="game-img">
-                            <img src="../img/jogo11/outlaws-header.jpg" alt="Imagem principal outlaws">
+
+                <div class="row-padding">
+                    <img class="slide-img" src="../img/jogo11/outlaws-img-sub-01.jpg">
+                    <img class="slide-img" src="../img/jogo11/outlaws-img-sub-02.jpg" style="display:block !important;">
+                    <img class=" slide-img" src="../img/jogo11/outlaws-img-sub-03.jpg">
+                </div>
+            </div>
+            <div class=" right-side">
+                <div class="front-details">
+                    <div class="game-img">
+                        <img src="../img/jogo11/outlaws-header.jpg" alt="Imagem principal  outlaws">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input1" value="0" name="">
+
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input2" value="0" name="">
                         </div>
-                        <div class="container">
-                            <div class="voting">
-                                <button id="likebtn">
-                                    <i class="fa fa-thumbs-up"></i>
-                                </button>
-                                <input type="number" id="input1" value="0" name="">
-            
-                                <button id="dislikebtn">
-                                    <i class="fa fa-thumbs-down"></i>
-                                </button>
-                                <input type="number" id="input2" value="0" name="">
-                            </div>
-                        </div>
+                    </div>
                         <div class="game-description">
                             <p>
                                 Get ready for the good, the bad, and the even worse. As Marshall James Anderson, you'll face a horde of ornery, gun-slinging outlaws. You'll shoot your way through a twisted plot of greed and revenge. You'll arm yourself with firearms, as well as your wits.
@@ -214,74 +224,26 @@
                         <div class="comentario">
                             <span class="estrela">★★★★★</span>
                             <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
-                            <p>Em sua "época", joguei esse jogo por mais horas do que haviam disponíveis num único dia.
-                                Clássico, controverso, polêmico, mas, acima de tudo, muito divertido e original.
+                            <p> É só procurar e baixar e jogar na raiz do jogo.
                             </p>
-                            <p><b>Tony</b> - 0.2h jogadas</p>
+                            <p><b>Rec_Soldier</b> - 6.0h jogadas</p>
                         </div>
                         <div class="comentario">
                             <span class="estrela">★★★★</span>
                             <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
-                            <p>Top demais.</p>
-                            <p><b>или</b> - 1.2h jogadas</p>
+                            <p>um dos melhores fps dos anos 90s!!!</p>
+                            <p><b>Netuno Frag</b> - 11.2h jogadas</p>
                         </div>
                         <div class="comentario">
-                            <span class="estrela">★</span>
-                            <p><b><b><b><i class="fa fa-thumbs-down"></i>Não recomendado</b></b></b></p>
-                            <p>Não consigo iniciar o jogo... Ás configurações do meu PC são absurdas, então não é
-                                isso...
+                            <span class="estrela">★★★★★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-up"></i>Recomendado</b></b></b></p>
+                            <p>Bom jogo! Me faz lembrar quando meu pai jogava comigo, bons tempos...
                             </p>
-                            <p><b>Pepsiftw</b> - 40.0h jogadas</p>
+                            <p><b>Vi não</b> - 61.4h jogadas</p>
                         </div>
                     </td>
                 </tr>
             </table>
-            <!--<table>
-                <tr>
-                    <td class="coluna1_avaliacao">
-                        <span class="estrela">★★★★★</span><br>
-                        <b>5,0 de 5 estrelas</b><br>
-                    </td>
-                    <td>
-                        <div class="user">
-                            <img id="user_foto" src="../img/jogo11/outlaws-img-user-01.jpg">
-                            <p>Rec_Soldier</p>
-                        </div>
-                        <div class="user">
-                            <img id="user_foto" src="../img/jogo11/outlaws-img-user-02.jpg">
-                            <p>Cypriano</p>
-                        </div>
-                        <div class="user">
-                            <img id="user_foto" src="../img/jogo11/outlaws-img-user-03.jpg">
-                            <p>Ds</p>
-                        </div>
-                    </td>
-                    <td>
-                        
-                        <div class="comentario">
-                            <span class="estrela">★★★★★</span>
-                            <p>Jogo que marcou minha infância no Windows 98SE! Tenho os 2 CDs originais totalmente em Português até hoje. É uma pena que a versão digital tanto na GOG quanto na Steam estão em inglês. Porém eu fiz a cópia do áudio do meu cd e disponibilizei no fórum do jogo aqui na Steam. É só procurar e baixar e jogar na raiz do jogo.</p>
-                            <p><b>PUBLICADA: 21 DE MAIO DE 2020</b></p>
-                        </div>
-                        <div class="comentario">
-                            <span class="estrela">★★★★★</span>
-                            <p>Simplesmente um dos melhores jogos de tiro com história que já existiu.
-                                Para os padrões da época, Outlaws era muito inovador principalmente com uma dublagem excepcional em português.
-                                
-                                Seus 7 reais valem testar esse jogo antigo?
-                                Definitivamente.</p>
-                            <p><b>PUBLICADA: 19 DE NOVEMBRO DE 2018</b></p>
-                        </div>
-                        <div class="comentario">
-                            <span class="estrela">★★★★★</span>  
-                            <p>Que nostalgia! Jogava muito quando era criança. Até hoje tenho o cd original que contém a OST do jogo, que é SENSACIONAL!
-                                Um dos melhores jogos de faroeste. História simples mas envolvente, ótima dublagem (pena que não tem a versão em português) e alguns easter eggs engraçados.
-                                O jogo é divertido e oferece um bom desafio na maior dificuldade. Recomendo muito.</p>
-                            <p><b>PUBLICADA: 19 DE NOVEMBRO DE 2018</b></p>
-                        </div>
-                    </td>
-                </tr>
-            </table>-->
         </div>
     </main>
 <!-- rodapé -->

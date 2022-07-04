@@ -49,15 +49,25 @@
             <h1>
                 RollerCoaster Tycoon®: Deluxe 
             </h1>
+            <!-- Função slide de imagens -->
             <div class="row">
                 <div class="left-side">
                     <div class="img-sub">
-                        <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-01.jpg" alt="Imagem secundária roller coaster "></div>
-                        <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-02.jpg" alt="Imagem secundária roller coaster"></div>
-                        <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-03.jpg" alt="Imagem secundária roller coaster"></div>
+                        <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-01.jpg" alt="Imagem secundária roller coaster"
+                                onclick="currentDiv(1)"></div>
+                        <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-02.jpg" alt="Imagem secundária roller coaster"
+                                onclick="currentDiv(2)"></div>
+                        <div class="sub-img"><img src="../img/jogo09/rollerCoaster-img-sub-03.jpg" alt="Imagem secundária roller coaster"
+                                onclick="currentDiv(3)"></div>
+                    </div>
+
+                    <div class="row-padding">
+                        <img class="slide-img" src="../img/jogo09/rollerCoaster-img-sub-01.jpg">
+                        <img class="slide-img" src="../img/jogo09/rollerCoaster-img-sub-02.jpg" style="display:block !important;">
+                        <img class=" slide-img" src="../img/jogo09/rollerCoaster-img-sub-03.jpg">
                     </div>
                 </div>
-                <div class="right-side">
+                <div class=" right-side">
                     <div class="front-details">
                         <div class="game-img">
                             <img src="../img/jogo09/rollerCoaster-header.jpg" alt="Imagem principal roller coaster">
@@ -67,12 +77,12 @@
                                 <button id="likebtn">
                                     <i class="fa fa-thumbs-up"></i>
                                 </button>
-                                <input type="number" id="input1" value="0" name="">
-            
+                                <input class="input-voting" type="number" id="input1" value="0" name="">
+
                                 <button id="dislikebtn">
                                     <i class="fa fa-thumbs-down"></i>
                                 </button>
-                                <input type="number" id="input2" value="0" name="">
+                                <input class="input-voting" type="number" id="input2" value="0" name="">
                             </div>
                         </div>
                         <div class="game-description">
@@ -229,7 +239,7 @@
                         </div>
                         <div class="comentario">
                             <span class="estrela">★★★★★</span>
-                            <p><b><b><b><i class="fa fa-thumbs-up"></i>Não recomendado</b></b></b></p>
+                            <p><b><b><b><i class="fa fa-thumbs-up"></i>Recomendado</b></b></b></p>
                             <p>Classico do inicio dos anos 2000, joguei muito naquela epoca, vale a pena cada centavo pago horas e horas de diversao
                             </p>
                             <p><b>Kist</b> - 55.8h jogadas</p>

@@ -49,15 +49,25 @@
             <h1>
                 Shadow Warrior Classic 
             </h1>
+            <!-- Função slide de imagens -->
             <div class="row">
                 <div class="left-side">
                     <div class="img-sub">
-                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-01.jpg" alt="Imagem secundária shadow warrior"></div>
-                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-02.jpg" alt="Imagem secundária shadow warrior"></div>
-                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-03.jpg" alt="Imagem secundária shadow warrior"></div>
+                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-01.jpg" alt="Imagem secundária shadow warrior "
+                                onclick="currentDiv(1)"></div>
+                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-02.jpg" alt="Imagem secundária shadow warrior"
+                                onclick="currentDiv(2)"></div>
+                        <div class="sub-img"><img src="../img/jogo12/shadowWarrior-img-sub-03.jpg" alt="Imagem secundária shadow warrior"
+                                onclick="currentDiv(3)"></div>
+                    </div>
+
+                    <div class="row-padding">
+                        <img class="slide-img" src="../img/jogo12/shadowWarrior-img-sub-01.jpg">
+                        <img class="slide-img" src="../img/jogo12/shadowWarrior-img-sub-02.jpg" style="display:block !important;">
+                        <img class=" slide-img" src="../img/jogo12/shadowWarrior-img-sub-03.jpg">
                     </div>
                 </div>
-                <div class="right-side">
+                <div class=" right-side">
                     <div class="front-details">
                         <div class="game-img">
                             <img src="../img/jogo12/shadowWarrior-header.jpg" alt="Imagem principal shadow warrior">
@@ -67,12 +77,12 @@
                                 <button id="likebtn">
                                     <i class="fa fa-thumbs-up"></i>
                                 </button>
-                                <input type="number" id="input1" value="0" name="">
-            
+                                <input class="input-voting" type="number" id="input1" value="0" name="">
+
                                 <button id="dislikebtn">
                                     <i class="fa fa-thumbs-down"></i>
                                 </button>
-                                <input type="number" id="input2" value="0" name="">
+                                <input class="input-voting" type="number" id="input2" value="0" name="">
                             </div>
                         </div>
                         <div class="game-description">
@@ -212,70 +222,26 @@
                         <div class="comentario">
                             <span class="estrela">★★★★★</span>
                             <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
-                            <p>Em sua "época", joguei esse jogo por mais horas do que haviam disponíveis num único dia.
-                                Clássico, controverso, polêmico, mas, acima de tudo, muito divertido e original.
+                            <p>Meu primeiro contato foi com a versão após essa, mas esse não deixa a desejar. Paguei pelo meu, mas agora está grátis...
                             </p>
-                            <p><b>Tony</b> - 0.2h jogadas</p>
+                            <p><b>Felipa</b> - 8.9h jogadas</p>
                         </div>
                         <div class="comentario">
                             <span class="estrela">★★★★</span>
                             <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
-                            <p>Top demais.</p>
-                            <p><b>или</b> - 1.2h jogadas</p>
+                            <p>"Who wants some Wang?"</p>
+                            <p><b>FluffyKittenChan</b> - 0.3h jogadas</p>
                         </div>
                         <div class="comentario">
-                            <span class="estrela">★</span>
-                            <p><b><b><b><i class="fa fa-thumbs-down"></i>Não recomendado</b></b></b></p>
-                            <p>Não consigo iniciar o jogo... Ás configurações do meu PC são absurdas, então não é
-                                isso...
+                            <span class="estrela">★★★★★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-down"></i>Recomendado</b></b></b></p>
+                            <p>Um clássico de graça? obrigado Steam
                             </p>
-                            <p><b>Pepsiftw</b> - 40.0h jogadas</p>
+                            <p><b>WILLIANDVS</b> - 5.7h jogadas</p>
                         </div>
                     </td>
                 </tr>
             </table>
-            <!--<table>
-                <tr>
-                    <td class="coluna1_avaliacao">
-                        <span class="estrela">★★★★★</span><br>
-                        <b>5,0 de 5 estrelas</b><br>
-                    </td>
-                    <td>
-                        <div class="user">
-                            <img id="user_foto" src="../img/jogo12/shadowWarrior-img-user-01.jpg">
-                            <p>Felipa</p>
-                        </div>
-                        <div class="user">
-                            <img id="user_foto" src="../img/jogo12/shadowWarrior-img-user-02.jpg">
-                            <p>FluffyKittenChan</p>
-                        </div>
-                        <div class="user">
-                            <img id="user_foto" src="../img/jogo12/shadowWarrior-img-user-03.jpg">
-                            <p>StriderOFF</p>
-                        </div>
-                    </td>
-                    <td>
-                        
-                        <div class="comentario">
-                            <span class="estrela">★★★★★</span>
-                            <p>Meu primeiro contato foi com a versão após essa, mas esse não deixa a desejar. Paguei pelo meu, mas agora está grátis...</p>
-                            <p><b>PUBLICADA: 4 DE JANEIRO DE 2021</b></p>
-                        </div>
-                        <div class="comentario">
-                            <span class="estrela">★★★★★</span>
-                            <p>"Who wants some Wang?"</p>
-                            <p><b>PUBLICADA: 19 DE OUTUBRO DE 2013</b></p>
-                        </div>
-                        <div class="comentario">
-                            <span class="estrela">★★★★★</span>  
-                            <p>Shooter oldschool, divertido, com áreas secretas no cenário, vários jogos de tiro antigamente as tinham, não é? Não gostei muito da mira, mas nada que atrapalhe a diversão.
-
-                                Por ser gratuito, vale a pena baixar, caso você curta os clássicos.</p>
-                            <p><b>PUBLICADA: 9 DE MAIO DE 2015</b></p>
-                        </div>
-                    </td>
-                </tr>
-            </table>-->
         </div>
     </main>
 <!-- rodapé -->
