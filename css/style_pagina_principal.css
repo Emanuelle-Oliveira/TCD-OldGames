@@ -1,30 +1,30 @@
 /* Estrutura */
 
-body{
+body {
     margin: 0;
     font-family: 'Rajdhani', sans-serif;
     background-color: rgb(219, 219, 219);
 }
 
-header{
+header {
     background-color: black;
     color: #f2f000;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin:0;
+    margin: 0;
     margin-bottom: 40px;
     box-shadow: 2px 2px 2px black;
 }
 
-main{
+main {
     width: 80%;
     margin: auto;
     padding-top: 20px;
 }
 
-footer{
+footer {
     height: 20px;
     margin-top: 40px;
     background-color: black;
@@ -35,25 +35,25 @@ footer{
 
 /* Hero */
 
-.logo{
+.logo {
     padding: 0;
     margin-right: 10px;
     vertical-align: middle;
 }
 
-.carrinho{
+.carrinho {
     padding: 0;
     margin-right: 10px;
     vertical-align: middle;
     margin-left: 30px;
 }
 
-.carrinho:hover{
+.carrinho:hover {
     width: 35px;
     transition: 0.3s;
 }
 
-.direita_hero{
+.direita_hero {
     float: right;
     display: inline;
     vertical-align: middle;
@@ -61,7 +61,7 @@ footer{
     margin-top: 20px;
 }
 
-#busca_jogo{
+#busca_jogo {
     width: 200px;
     height: 36px;
     padding: 10px;
@@ -72,7 +72,7 @@ footer{
     border: none;
 }
 
-#botao_busca{
+#botao_busca {
     width: 25px;
     height: 25px;
     background-color: #f2f000;
@@ -83,39 +83,40 @@ footer{
     cursor: pointer;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
 
-datalist{
+datalist {
     font-family: 'Rajdhani', sans-serif;
 }
 
 /* Textos */
 
-.titulo{
+.titulo {
     margin: 0;
     font-size: 54px;
     font-weight: bold;
     vertical-align: middle;
 }
 
-h2{
+h2 {
     margin-top: 40px;
     border-bottom: 1px solid rgb(88, 88, 88);
     padding-bottom: 5px;
     margin-right: 10px;
 }
 
-h3{
+h3 {
     margin: 0;
     padding: 10px;
     font-size: 16px;
-    color:black;
+    color: black;
 }
 
-button{
+button {
     text-decoration: none;
     color: black;
     margin: 0px;
@@ -124,23 +125,23 @@ button{
     cursor: pointer;
 }
 
-button:visited{
-    text-decoration: none;
-    color:black;
-}
-
-a{
+button:visited {
     text-decoration: none;
     color: black;
 }
 
-#valida{
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#valida {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-#carrinho{
+#carrinho {
     position: fixed;
     padding: 0;
     left: 1680px;
@@ -148,31 +149,32 @@ a{
     top: 100px;
     align-items: center;
     text-align: center;
-    background-color:rgb(238, 238, 80);
+    background-color: rgb(238, 238, 80);
     transform: scale(1.1);
     border: #f2f000 1px;
     border-radius: 30px;
 }
 
-#car-principal{
+#car-principal {
     cursor: pointer;
 }
 
-#carrinho h1{
+#carrinho h1 {
     margin-top: 0px;
 }
-.cart--details{
+
+.cart--details {
     margin-bottom: 10px;
 }
 
-.menu-closer button{
+.menu-closer button {
     margin-left: 150px;
-    cursor: pointer ;
+    cursor: pointer;
     background-color: rgb(238, 238, 80);
 
 }
 
-#botton-fechar{
+#botton-fechar {
     background-color: black;
     border: none;
     color: yellow;
@@ -186,25 +188,25 @@ a{
 }
 
 
-#botton-fechar:hover{
+#botton-fechar:hover {
     opacity: 0.5;
 }
 
 
 
-a:visited{
+a:visited {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-h4{
+h4 {
     color: black;
     padding: 10px;
     text-align: right;
     margin: 0;
 }
 
-h5{
+h5 {
     font-size: 40px;
     margin: 0;
     padding: 0;
@@ -212,7 +214,7 @@ h5{
 
 /* Carrossel */
 
-.carrossel{
+.carrossel {
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
     width: 690px;
@@ -220,13 +222,13 @@ h5{
     margin: auto;
 }
 
-.container{
+.container {
     display: flex;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
 }
 
-.img_carrossel{
+.img_carrossel {
     object-fit: cover;
     width: 690px;
     height: 322.5px;
@@ -234,16 +236,16 @@ h5{
 
 /* Tabela */
 
-table{
+table {
     width: 100%;
 }
 
-td{
+td {
     width: 25%;
     padding-right: 15px;
 }
 
-.descricao{
+.descricao {
     background-color: rgb(231, 231, 231);
     margin: 0;
     margin-bottom: 15px;
@@ -251,16 +253,16 @@ td{
     padding-bottom: 10px;
 }
 
-.descricao:hover{
+.descricao:hover {
     background-color: white;
 }
 
-.imgtable{
+.imgtable {
     margin: 0;
     display: block;
 }
 
-.botao{
+.botao {
     padding: 5px;
     margin: 0;
     margin-left: 5px;
@@ -271,11 +273,11 @@ td{
     vertical-align: middle;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: rgb(78, 78, 78);
 }
 
-.carrinhobotao{
+.carrinhobotao {
     margin: 0;
     vertical-align: middle;
 }
