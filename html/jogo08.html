@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Half-Life">
+    <title>Half-Life (1998)</title>
+    <!--Importação de stylesheets  -->
+    <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <a href="pagina_principal.html">
+            <img class="logo" src="../img/pagina_principal/logo.png" width="58px"></a>
+        <span class="titulo">Old Games</span>
+        <span class="direita_hero">
+            <input type="search" id="busca_jogo" list="lista_jogos">
+            <datalist id="lista_jogos">
+                <option value="Grand Theft Auto"></option>
+                <option value="The Ultimate Doom"></option>
+                <option value="Worms Armageddon"></option>
+                <option value="Doom II"></option>
+                <option value="Wolfenstein 3D"></option>
+                <option value="Quake"></option>
+                <option value="Diablo"></option>
+                <option value="Half-Life"></option>
+                <option value="RollerCoaster Tycoon"></option>
+                <option value="Duke Nukem 3D"></option>
+                <option value="Outlaws"></option>
+                <option value="Shadow Warrior"></option>
+            </datalist>
+            <img src="../img/pagina_principal/lupa.png" id="botao_busca" onclick="realizarBusca()">
+            <a href="pagina_carrinho.html">
+                <img class="carrinho" src="../img/pagina_principal/carrinho.png" width="30px">
+            </a>
+        </span>
+    </header>
+    <!-- Conteudo principal -->
+    <main>
+        <h1>
+            Half-Life
+        </h1>
+        <!-- Função slide de imagens -->
+        <div class="row">
+            <div class="left-side">
+                <div class="img-sub">
+                    <div class="sub-img"><img src="../img/jogo08/halfsecundaria1.jpg" alt="Imagem secundária Half-Life"
+                            onclick="currentDiv(1)"></div>
+                    <div class="sub-img"><img src="../img/jogo08/halfsecundaria2.jpg" alt="Imagem secundária Half-Life"
+                            onclick="currentDiv(2)"></div>
+                    <div class="sub-img"><img src="../img/jogo08/halfsecundaria3.jpg" alt="Imagem secundária Half-Life"
+                            onclick="currentDiv(3)"></div>
+                </div>
+
+                <div class="row-padding">
+                    <img class="slide-img" src="../img/jogo08/halfsecundaria1.jpg">
+                    <img class="slide-img" src="../img/jogo08/halfsecundaria2.jpg" style="display:block !important;">
+                    <img class=" slide-img" src="../img/jogo08/halfsecundaria3.jpg">
+                </div>
+            </div>
+            <div class=" right-side">
+                <div class="front-details">
+                    <div class="game-img">
+                        <img src="../img/jogo08/halflifeheader.jpg" alt="Imagem principal Half-Life">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input1" value="0" name="">
+
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input2" value="0" name="">
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        <p>
+                            Premiado como "Jogo do Ano" por cerca de 50 publicações, o título de estreia da Valve 
+                            combina ação e aventura com uma tecnologia premiada para criar um mundo assustadoramente 
+                            realístico onde os jogadores devem pensar para sobreviver. Também inclui um emocionante modo 
+                            multijogador que lhe...
+                        </p>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Todas as análises</td>
+                                <td>--Link--</td>
+                            </tr>
+                            <tr>
+                                <td>Data de Lançamento</td>
+                                <td>08/nov./1998</td>
+                            </tr>
+                            <tr>
+                                <td>Desenvolvedor</td>
+                                <td><a href="https://store.steampowered.com/developer/valve">Valve</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Distribuidora</td>
+                                <td><a href="https://store.steampowered.com/publisher/valve">Valve</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="left-side">
+                <div class="alert-idioma">
+                    <h3>
+                        Indisponível em Português(Brasil)
+                    </h3>
+                    Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
+                    antes de comprar.
+                </div>
+
+                <div class="game-details">
+                    <h2>
+                        Sobre este jogo
+                    </h2>
+                    <!-- <hr> -->
+                    Premiado como "Jogo do Ano" por cerca de 50 publicações, 
+                    o título de estreia da Valve combina ação e aventura com uma 
+                    tecnologia premiada para criar um mundo assustadoramente realístico 
+                    onde os jogadores devem pensar para sobreviver. Também inclui um emocionante
+                     modo multijogador que lhe permite jogar contra amigos e inimigos pelo mundo. 
+                    <br>
+                </div>
+                <div>
+                    <h2>
+                        Requisistos de Sistema
+                    </h2>
+                    <!-- <hr> -->
+                    <table>
+                        <tr>
+                            <td>OS:</td>
+                            <td>Windows XP</td>
+                        </tr>
+                        <tr>
+                            <td>Processador:</td>
+                            <td>Processador com 500MHz ou mais </td>
+                        </tr>
+                        <tr>
+                            <td>Memória:</td>
+                            <td>96Mb de RAM</td>
+                        </tr>
+                        <tr>
+                            <td>Espaço em Disco:</td>
+                            <td>400 Mb de armazenamento</td>
+                        </tr>
+                        <tr>
+                            <td>Placa de Video:</td>
+                            <td>Placa com 16Mb de memória de vídeo ou mais</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="status-side">
+                    <table>
+                        <tr>
+                            <td>Título:</td>
+                            <td> Half-Life</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero:</td>
+                            <td>Ação</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento:</td>
+                            <td>8/nov./1998</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvedor:</td>
+                            <td><a href="https://store.steampowered.com/developer/valve">Valve</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distribuidora:</td>
+                            <td><a href="https://store.steampowered.com/publisher/valve">Valve</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jogadores: </td>
+                            <td>Um jogador, Multiplayer.</td>
+                        </tr>
+                        <tr>
+                            <td>Idiomas:</td>
+                            <td>Inglês</td>
+                        </tr>
+                        <tr>
+                            <td>Dublagem:</td>
+                            <td>Indisponível</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="analises">
+            <h1>Análises de Usuários</h1>
+            <table>
+                <tr>
+                    <td class="coluna1_avaliacao">
+                        <span class="estrela">★★★★★</span><br>
+                        <b>5,0 de 5 estrelas</b><br>
+                    </td>
+                    <td>
+                        <h5>
+                            Confira as opiniões dos clientes sobre este produto
+                        </h5>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                            <p> Simplesmente half life, tinha que ser obrigatório jogar.  
+                            </p>
+                            <p><b>HavocGamer</b> - 12.9h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★</span>
+                            <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                            <p>Conheça Gordom Freeman, o responsável pela morte de milhões de pessoas   </p>
+                            <p><b>Josh</b> - 61.9h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-down"></i> Não recomendado</b></b></b></p>
+                            <p>Para de procurar análise negativa e compra esse jogo maravilhoso ! 
+                            </p>
+                            <p><b>Geraldão de Rívia</b> - 51.3h jogadas</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <!-- rodapé -->
+    <footer>
+        © 2022 Old Games Inc.
+    </footer>
+    <script src="../js/script_paginas_jogos.js"></script>
+</body>
+
+
+</html>

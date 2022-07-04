@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Wolfenstein 3D">
+    <title>Wolfenstein 3D (1994)</title>
+    <!--Importação de stylesheets  -->
+    <link rel="stylesheet" href="../css/style_paginas_jogos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <a href="pagina_principal.html">
+            <img class="logo" src="../img/pagina_principal/logo.png" width="58px"></a>
+        <span class="titulo">Old Games</span>
+        <span class="direita_hero">
+            <input type="search" id="busca_jogo" list="lista_jogos">
+            <datalist id="lista_jogos">
+                <option value="Grand Theft Auto"></option>
+                <option value="The Ultimate Doom"></option>
+                <option value="Worms Armageddon"></option>
+                <option value="Doom II"></option>
+                <option value="Wolfenstein 3D"></option>
+                <option value="Quake"></option>
+                <option value="Diablo"></option>
+                <option value="Half-Life"></option>
+                <option value="RollerCoaster Tycoon"></option>
+                <option value="Duke Nukem 3D"></option>
+                <option value="Outlaws"></option>
+                <option value="Shadow Warrior"></option>
+            </datalist>
+            <img src="../img/pagina_principal/lupa.png" id="botao_busca" onclick="realizarBusca()">
+            <a href="pagina_carrinho.html">
+                <img class="carrinho" src="../img/pagina_principal/carrinho.png" width="30px">
+            </a>
+        </span>
+    </header>
+    <!-- Conteudo principal -->
+    <main>
+        <h1>
+            Wolfenstein 3D
+        </h1>
+        <!-- Função slide de imagens -->
+        <div class="row">
+            <div class="left-side">
+                <div class="img-sub">
+                    <div class="sub-img"><img src="../img/jogo05/wolfenstein3dsecundaria1.jpg" alt="Imagem secundária Wolfenstein"
+                            onclick="currentDiv(1)"></div>
+                    <div class="sub-img"><img src="../img/jogo05/wolfenstein3dsecundaria2.jpg" alt="Imagem secundária Wolfenstein"
+                            onclick="currentDiv(2)"></div>
+                    <div class="sub-img"><img src="../img/jogo05/wolfensteinsecundaria3.jpg" alt="Imagem secundária Wolfenstein"
+                            onclick="currentDiv(3)"></div>
+                </div>
+
+                <div class="row-padding">
+                    <img class="slide-img" src="../img/jogo05/wolfenstein3dsecundaria1.jpg">
+                    <img class="slide-img" src="../img/jogo05/wolfenstein3dsecundaria2.jpg" style="display:block !important;">
+                    <img class=" slide-img" src="../img/jogo05/wolfensteinsecundaria3.jpg">
+                </div>
+            </div>
+            <div class=" right-side">
+                <div class="front-details">
+                    <div class="game-img">
+                        <img src="../img/jogo05/wolfenstein3d.jpg" alt="Imagem principal Wolfenstein">
+                    </div>
+                    <div class="container">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input1" value="0" name="">
+
+                            <button id="dislikebtn">
+                                <i class="fa fa-thumbs-down"></i>
+                            </button>
+                            <input class="input-voting" type="number" id="input2" value="0" name="">
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        <p>
+                            Talvez fosse o fato de que as pessoas adoram EXTERMINAR nazistas. Talvez fosse o puro desafio de tudo isso.
+                            Por qualquer razão, Wolfenstein 3D e Spear of Destiny são pioneiros no gênero first-person-shooter e trouxe 
+                            aos seus lendários criadores, a id Software, notoriedade mundial e diversos prêmios.
+                        </p>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Todas as análises</td>
+                                <td>--Link--</td>
+                            </tr>
+                            <tr>
+                                <td>Data de Lançamento</td>
+                                <td>03/ago./1994</td>
+                            </tr>
+                            <tr>
+                                <td>Desenvolvedor</td>
+                                <td><a href="https://store.steampowered.com/developer/bethesda">id Software</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Distribuidora</td>
+                                <td><a href="https://store.steampowered.com/publisher/bethesda">Bethesda-Softworks</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="left-side">
+                <div class="alert-idioma">
+                    <h3>
+                        Indisponível em Português(Brasil)
+                    </h3>
+                    Este produto não está disponível no seu idioma. Confira a lista de idiomas oferecidos
+                    antes de comprar.
+                </div>
+
+                <div class="game-details">
+                    <h2>
+                        Sobre este jogo
+                    </h2>
+                    <!-- <hr> -->
+                    Talvez fosse o fato de que as pessoas adoram EXTERMINAR nazistas.
+                    <br>
+                    Talvez fosse o puro desafio de tudo isso.
+                    <br>
+                    Por qualquer razão, Wolfenstein 3D e Spear of Destiny são pioneiros no gênero first-person-shooter e trouxe 
+                            aos seus lendários criadores, a id Software, notoriedade mundial e diversos prêmios.
+                </div>
+                <div>
+                    <h2>
+                        Requisistos de Sistema
+                    </h2>
+                    <!-- <hr> -->
+                    <table>
+                        <tr>
+                            <td>OS:</td>
+                            <td>none</td>
+                        </tr>
+                        <tr>
+                            <td>Processador:</td>
+                            <td>IBM 286 Computer</td>
+                        </tr>
+                        <tr>
+                            <td>Memória:</td>
+                            <td> 528k de memória RAM</td>
+                        </tr>
+                        <tr>
+                            <td>Espaço em Disco:</td>
+                            <td>12 Mb de armazenamento</td>
+                        </tr>
+                        <tr>
+                            <td>Placa de Video:</td>
+                            <td>none</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="status-side">
+                    <table>
+                        <tr>
+                            <td>Título:</td>
+                            <td> Wolfenstein 3D</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero:</td>
+                            <td>Ação</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento:</td>
+                            <td>03/ago./1994</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvedor:</td>
+                            <td><a href="https://store.steampowered.com/developer/bethesda">id Software</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distribuidora:</td>
+                            <td><a href="https://store.steampowered.com/publisher/bethesda">Bethesda-Softworks</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jogadores: </td>
+                            <td>Um jogador</td>
+                        </tr>
+                        <tr>
+                            <td>Idiomas:</td>
+                            <td>Inglês</td>
+                        </tr>
+                        <tr>
+                            <td>Dublagem:</td>
+                            <td>Indisponível</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="analises">
+            <h1>Análises de Usuários</h1>
+            <table>
+                <tr>
+                    <td class="coluna1_avaliacao">
+                        <span class="estrela">★★★★★</span><br>
+                        <b>5,0 de 5 estrelas</b><br>
+                    </td>
+                    <td>
+                        <h5>
+                            Confira as opiniões dos clientes sobre este produto
+                        </h5>
+                        <div class="comentario">
+                            <span class="estrela">★★★★★</span>
+                            <p><b><i class="fa fa-thumbs-up"></i> Recomendado</b></p>
+                            <p> Esse jogo mudou tudo sobre o que a gente sabe sobre jogos. 
+                            </p>
+                            <p><b>Salvego</b> - 8.3h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★★★★</span>
+                            <p><b><b><i class="fa fa-thumbs-up"></i> Recomendado</b></b></p>
+                            <p>Excelente! O "pai" de todos os FPS'. Ofuscado por Doom no ano seguinte à sua criação, mas não deixa de ser uma obra-prima. </p>
+                            <p><b>-AllvessX</b> - 1.2h jogadas</p>
+                        </div>
+                        <div class="comentario">
+                            <span class="estrela">★</span>
+                            <p><b><b><b><i class="fa fa-thumbs-down"></i> Não recomendado</b></b></b></p>
+                            <p>Então, o jogo é ótimo e muita dahora mas eu perdi meu save umas vezes, então manos, não dá pra recomendar essa versão 
+                            </p>
+                            <p><b>Vitor Lima</b> - 1.7h jogadas</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <!-- rodapé -->
+    <footer>
+        © 2022 Old Games Inc.
+    </footer>
+    <script src="../js/script_paginas_jogos.js"></script>
+</body>
+
+
+</html>
